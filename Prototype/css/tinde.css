@@ -1,0 +1,261 @@
+.container {
+	margin-top: 80px;
+	width: 100%;
+	padding: 0;
+}
+.col-lg-12, .col-lg-10, .col-lg-9 { 
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+/* Navbar */
+.navbar {
+	height: 80px;
+	width: 100%;
+	background: #fff;
+}
+
+.nav-cont {
+	width: 50%;
+	margin: 0 auto;
+	float: none;
+}
+
+.navbar-nav {
+	width: 50%;
+}
+
+.navbar-nav li {
+	margin: 2% 10% 0;
+}
+
+.navbar-nav:nth-child(2), .navbar-nav:nth-child(2) li {
+	float: right;
+}
+
+.nav-contact {
+	background: lightgray;
+	font-weight: bold;
+}
+
+/*---------- Header Image ----------*/
+
+.jumbo {
+	position: fixed;
+	height: 400px;
+}
+
+.jumbo, .areamap {
+	width: 100%;
+}
+
+.jumbo img, .areamap img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.jumbo-hide {
+	background: #fff;
+	margin-top: 400px;
+}
+
+/*---------- Footer ----------*/
+
+footer {
+	height: 450px;
+	background: #444;
+}
+
+footer>div {
+	color: #ddd;
+	margin-top: 70px;
+}
+
+/*---------- Hjem ----------*/
+
+.intro {
+	float: none;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.intro h2 {
+	margin-bottom: 60px;
+}
+
+.intro a {
+	font-size: 2rem;
+}
+
+.areas {
+	padding-bottom: 50px;
+	background: #eee;
+}
+
+.area-filter {
+	width: 50%;
+	margin: 50px auto;
+}
+
+.area-filter ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.inactive a {
+	border-radius: 4px;
+	background: #999;
+	color: white;
+}
+
+.area-cont .row {
+	margin-bottom: 50px;
+}
+
+.area-cont img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.expand-area {
+	margin-top: -20px;
+	text-align: center;
+}
+
+/*---------- Områder ----------*/
+
+.tomte-cont {
+	width: 70%;
+	height: 100%;
+	float: none;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tomte-cont>div:nth-child(1)>h1 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.area-result {
+	margin: 50px 0;
+}
+
+.area-result>div:nth-child(2) h2 {
+	margin-top: 10px;
+}
+
+.filter-option {
+	margin-bottom: 10px;
+}
+
+.checkbox input {
+	width: 20px;
+	height: 20px;
+	margin: 0 0 0 0 !important;
+}
+
+/*---------- Tomteområde ----------*/
+
+.tomt-info {
+	width: 37%;
+	height: 100%;
+	float: none;
+	overflow: auto;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tomt-info h1 {
+	margin-bottom: 30px;
+}
+
+.tomt-info h4 {
+	margin-bottom: 20px;
+}
+
+.btn-kontakt {
+	margin: 60px auto;
+	display: block;
+}
+
+.tomt {
+	display: flex;
+	height: 100%;
+}
+
+.tomt div:nth-child(1) img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.tomt div:nth-child(2) {
+	flex: 1;
+	background: white;
+	border: 2px solid #eee;
+}
+
+.tomt a {
+	margin-top: 50px;
+	width: 300px;
+}
+
+.liste .row{
+	width: 70%;
+	margin: 50px auto;
+	float: none;
+}
+
+.print span {
+	font-size: 4rem;
+}
+
+.planer, .selgere {
+	margin-bottom: 50px;
+}
+
+.planer h4, .selgere h4 {
+	margin: 15px 0;
+}
+
+.planer h4 span, .selgere h4 span {
+	font-size: 4rem;
+	margin: 0 10px;
+}
+
+/*---------- Hvem er vi ----------*/
+
+.omoss-cont {
+	margin: 40px auto 50px auto;
+	float: none;
+	overflow: auto;
+	width: 40%;
+	height: 100%;
+}
+
+.omoss-cont>div:nth-child(1) {
+	margin-bottom: 40px;
+}
+
+.selger-info {
+	margin: 25px 0;
+}
+
+.selger-info div:nth-child(2) {
+	width: 50%;
+}
+
+.selger-info div:nth-child(2) h2 {
+	margin-top: 5px;
+}
+
+/*---------- Kontakt ----------*/
+
+.kontakt-form {
+	margin: 70px 0 125px 0;
+}
