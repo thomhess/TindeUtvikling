@@ -46,6 +46,9 @@
 .jumbo {
 	position: fixed;
 	height: 400px;
+    background-image: url(../img/3610-6317b676de359186a6b008f3d8c8efd0-0b71b6b7b89d687c5e07f83650669fb320_utsikt_1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .jumbo, .areamap {
@@ -157,6 +160,10 @@ footer>div {
 	width: 20px;
 	height: 20px;
 	margin: 0 0 0 0 !important;
+}
+
+.img-result {
+    max-width: 100%;
 }
 
 /*---------- Tomteområde ----------*/
