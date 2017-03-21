@@ -1,5 +1,4 @@
 .container {
-	margin-top: 80px;
 	width: 100%;
 	padding: 0;
 }
@@ -12,17 +11,11 @@
 }
 
 
-/* Navbar */
+/*---------- Nav bar ----------*/
 
 .navbar {
 	background: #fff;
 	border-bottom-width: 0px;
-}
-
-.nav-cont {
-	width: 50%;
-	margin: 0 auto;
-	float: none;
 }
 
 .navbar-nav {
@@ -35,48 +28,24 @@
 }
 
 .nav-contact {
-	background: lightgray;
 	font-weight: bold;
 }
 
-
-/*
-.navbar {
-	height: 80px;
-	width: 100%;
-	background: #fff;
+.meny-knapp {
+	margin-left: 15px;
 }
 
-.nav-cont {
-	width: 50%;
-	margin: 0 auto;
-	float: none;
+#bs-example-navbar-collapse-1 ul li a {
+	color: #337ab7;
 }
 
-.navbar-nav {
-	width: 50%;
-}
 
-.navbar-nav li {
-	margin: 2% 10% 0;
-}
-
-.navbar-nav:nth-child(2), .navbar-nav:nth-child(2) li {
-	float: right;
-}
-
-.nav-contact {
-	background: lightgray;
-	font-weight: bold;
-}
-
-*/
 
 /*---------- Header Image ----------*/
 
 .jumbo {
 	position: fixed;
-	height: 400px;
+	height: 450px;
     background-image: url(../img/3610-6317b676de359186a6b008f3d8c8efd0-0b71b6b7b89d687c5e07f83650669fb320_utsikt_1.jpg);
     background-size: cover;
     background-position: center;
@@ -93,7 +62,7 @@
 
 .jumbo-hide {
 	background: #fff;
-	margin-top: 400px;
+	margin-top: 450px;
 }
 
 /*---------- Footer ----------*/
@@ -116,8 +85,11 @@ footer>div {
 	text-align: center;
 }
 
-.intro h2 {
+.intro h3 {
+	font-size: 2rem;
 	margin-bottom: 60px;
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 .intro a {
