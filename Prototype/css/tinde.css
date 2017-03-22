@@ -288,7 +288,29 @@
 /*---------- Kontakt ----------*/
 
 .kontakt-form {
-	margin: 70px 0 125px 0;
+	margin: 0px 0 125px 0;
+}
+
+.kontakt-bokser h4 {
+	margin-top: 25px;
+	margin-bottom: 7px;
+}
+
+.kontakt-bokser .checkboxes label {
+  display: block;
+  float: left;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.kontakt-bokser .checkboxes input {
+  vertical-align: middle;
+}
+.kontakt-bokser .checkboxes label span {
+  vertical-align: middle;
+}
+
+.kontakt-bokser span {
+	font-weight: normal;
 }
 
 /*---------- Footer ----------*/
