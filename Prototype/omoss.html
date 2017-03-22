@@ -2,83 +2,98 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tinde Utvikling</title>
+	<!--bootstrap link -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--own css -->
 	<link rel="stylesheet" type="text/css" href="css/tinde.css">
+	<!--jquery and bootstrap js file-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-fixed-top">
-			<div class="col-lg-12 nav-cont">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html" class="menu-1">Hjem</a></li>
-					<li><a href="område.html" class="menu-2">Områder</a></li>
+	<!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+       
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="meny-knapp navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Meny <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+					<li><a href="index.html" >Hjem</a></li>
+					<li><a href="område.html" >Områder</a></li>
+					<li><a href="omoss.html" >Hvem er vi</a></li>
+					<li><a href="kontakt.html" class="nav-contact">Kontakt</a></li>
 				</ul>
-				<ul class="nav navbar-nav">
-					<li><a href="kontakt.html" class="menu-2 nav-contact">Kontakt</a></li>
-					<li><a href="omoss.html" class="menu-1">Hvem er vi</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="col-lg-12">
-			<div class="jumbo">
-				
+            </div>
+            <!-- /.navbar-collapse -->
+    </nav>
+    <!--header-->
+    <div class="row">
+		<div class="col-xs-12 header">
+		</div>
+	</div>	
+	<div class="row headerrow">	
+	</div>
+
+	<!--Hvem er vi content-->
+	<div class="col-xs-12 innholdDiv">
+		<div class="row">
+			<div class="col-md-5 col-md-offset-3 col-xs-9 col-xs-offset-2 ">
+				<h1>Hvem er vi</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, totam, quod! Nihil rem, tempora deleniti. Laborum neque consequatur, obcaecati aperiam quo id molestiae sunt, explicabo officiis unde quasi sed illum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsa cum amet ut minus suscipit tenetur ab, et quisquam repudiandae nulla porro sint quo placeat temporibus similique excepturi rem aperiam!</p>
 			</div>
 		</div>
-		<div class="col-lg-12 jumbo-hide">
-			<div class="col-lg-12 omoss-cont">
-				<div class="col-lg-12">
-					<h1>Hvem er vi</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, totam, quod! Nihil rem, tempora deleniti. Laborum neque consequatur, obcaecati aperiam quo id molestiae sunt, explicabo officiis unde quasi sed illum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsa cum amet ut minus suscipit tenetur ab, et quisquam repudiandae nulla porro sint quo placeat temporibus similique excepturi rem aperiam!</p>
-				</div>
-				<div class="col-lg-12">
-					<div class="col-lg-12">
-						<h1>Våre selgere</h1>
-					</div>
-					<div class="col-lg-12">
-						<div class="row selger-info">
-							<div class="col-lg-3">
-								<img src="http://placehold.it/150x150" alt="">
-							</div>
-							<div class="col-lg-9">
-								<h2>Lise Hansen</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
-							</div>
-						</div>
-						<div class="row selger-info">
-							<div class="col-lg-3">
-								<img src="http://placehold.it/150x150" alt="">
-							</div>
-							<div class="col-lg-9">
-								<h2>Jan Jansen</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
-							</div>
-						</div>
-						<div class="row selger-info">
-							<div class="col-lg-3">
-								<img src="http://placehold.it/150x150" alt="">
-							</div>
-							<div class="col-lg-9">
-								<h2>Siri Siridottir</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="row">
+			<div class="col-xs-9 col-xs-offset-3">
+				<h1>Våre selgere</h1>
 			</div>
 		</div>
+		<div class="row selger-info">
+			<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
+				<img src="http://placehold.it/150x150" alt="">
+			</div>
+			<div class="col-xs-6 col-md-3 col-md-offset-1">
+				<h2>Lise Hansen</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+			</div>
+		</div>
+		<div class="row selger-info">
+		<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
+				<img src="http://placehold.it/150x150" alt="">
+			</div>
+			<div class="col-xs-6 col-md-3 col-md-offset-1">
+				<h2>Jan Jansen</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+			</div>
+		</div>
+		<div class="row selger-info">
+		<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
+				<img src="http://placehold.it/150x150" alt="">
+			</div>
+			<div class="col-xs-6 col-md-3 col-md-offset-1">
+				<h2>Siri Siridottir</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+			</div>
+		</div>
+	</div>
 		<div class="col-lg-12">
 			<div class="areamap">
 				<img src="http://placehold.it/1920x400?text=Kart for lokasjon av Tinde Utvikling hovedkontor" alt="">
 			</div>
 		</div>
-		<footer class="col-lg-12">
-			<div class="col-lg-3 col-lg-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
-			<div class="col-lg-3 col-lg-offset-2"><img src="http://placehold.it/400x300" alt=""></div>
+		<!--footer-->
+		<footer class="col-xs-12">
+			<div class="col-md-3 col-md-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
+			<div class="col-md-3 col-md-offset-2 col-xs-12"><img class="img-responsive" src="http://placehold.it/400x300" alt=""></div>
 		</footer>
-	</div>
 </body>
 </html>

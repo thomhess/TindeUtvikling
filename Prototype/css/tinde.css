@@ -11,6 +11,10 @@
 	margin: 0;
 }
 
+.row {
+	margin:0;
+}
+
 
 /*---------- Nav bar ----------*/
 
@@ -56,6 +60,7 @@
 
 .headerrow {
 	margin-top: 400px;
+	background-color: white;
 }
 
 .areamap {
@@ -261,16 +266,20 @@
 	height: 100%;
 }
 
+.innholdDiv {
+	background-color: white;
+}
+
+.innholdDiv >div:nth-child(1) {
+	margin-bottom: 40px;
+}
+
 .omoss-cont>div:nth-child(1) {
 	margin-bottom: 40px;
 }
 
 .selger-info {
 	margin: 25px 0;
-}
-
-.selger-info div:nth-child(2) {
-	width: 50%;
 }
 
 .selger-info div:nth-child(2) h2 {
