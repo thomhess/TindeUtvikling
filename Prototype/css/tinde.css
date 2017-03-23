@@ -209,8 +209,22 @@
 	display: none;
 }
 
+.innholdDiv button span {
+	top: 4px;
+    margin-left: 6px;
+}
+
 .innholdDiv h1 {
 	text-align: center;
+}
+
+.checkbox {
+	margin-left: 5px;
+}
+
+.filterDiv h2 {
+	margin-left: 5px;
+	margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 991px) {

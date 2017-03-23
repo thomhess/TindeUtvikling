@@ -1,6 +1,10 @@
 
 $( "#filterKnapp" ).click(function() {
   $( ".filterDiv" ).toggle( "slow", function() {
-    // Animation complete.
   });
+});
+
+
+$('#filterKnapp').on('click', function() {
+    $("span").toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
 });
