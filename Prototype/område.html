@@ -2,178 +2,111 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tinde Utvikling</title>
+	<!--bootstrap link -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--own css -->
 	<link rel="stylesheet" type="text/css" href="css/tinde.css">
+	<!--jquery and bootstrap js file-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-fixed-top">
-			<div class="col-lg-12 nav-cont">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html" class="menu-1">Hjem</a></li>
-					<li><a href="område.html" class="menu-2">Områder</a></li>
+	<!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+       
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="meny-knapp navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Meny <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+					<li><a href="index.html" >Hjem</a></li>
+					<li><a href="område.html" >Områder</a></li>
+					<li><a href="omoss.html" >Hvem er vi</a></li>
+					<li><a href="kontakt.html" class="nav-contact">Kontakt</a></li>
 				</ul>
-				<ul class="nav navbar-nav">
-					<li><a href="kontakt.html" class="menu-2 nav-contact">Kontakt</a></li>
-					<li><a href="omoss.html" class="menu-1">Hvem er vi</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="col-lg-12">
-			<div class="jumbo">
-			</div>
+            </div>
+            <!-- /.navbar-collapse -->
+    </nav>
+    <!--header-->
+    <div class="row">
+		<div class="col-xs-12 header">
 		</div>
-		<div class="col-lg-12 jumbo-hide">
-			<div class="tomte-cont">
-				<div class="col-lg-18">
-					<h1>Tomteområder</h1>
+	</div>	
+	<div class="row headerrow">	
+	</div>
+	<!--Filtrering-->
+	<div class="col-xs-12 innholdDiv ">
+		<div class="row filtreringcol">
+			<div class="col-md-3 col-md-offset-2 col-xs-12">
+				<h2>Sted</h2>
+				<div class="checkbox">
+					<input type="checkbox" value="">
 				</div>
-				<div class="col-lg-4">
-					<div class="col-lg-12">
-						<h2>Sted</h2>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Gudbrandsdalen Sør</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Gudbrandsdalen Nord</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Valdres</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Sør-Trøndelag</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Hedmark</h4>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<h2>Aktiviteter</h2>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Langrenn</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Fiske</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Alpint</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Tur</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Jakt</h4>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<h2>Fasiliteter</h2>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Strøm</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Avløp</h4>
-						</div>
-					</div>
-					<div class="row filter-option">
-						<div class="col-lg-2">
-							<div class="checkbox">
-  								<input type="checkbox" value="">
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<h4>Vei</h4>
-						</div>
-					</div>
+				<h4>Gudbrandsdalen Sør</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
 				</div>
-				<div class="col-lg-8">
-					<div class="row area-result">
+				<h4>Gudbrandsdalen Nord</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Valders</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Sør-Trøndelag</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Hedmark</h4>
+				<br>
+				<h2>Akiviteter</h2>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Langrenn</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Fiske</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Alpint</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Tur</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Jakt</h4>
+				<br>
+				<h2>Fasiliteter</h2>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Strøm</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Avløp</h4>
+				<div class="checkbox">
+					<input type="checkbox" value="">
+				</div>
+				<h4>Vei</h4>
+			</div>
+			<!--Områdene-->
+			<div class="col-md-7 col-xs-12 ">
+				<div class="row area-result">
 						<div class="col-lg-4">
 							<a href="område/skreikampen.html"><img src="http://placehold.it/250x180" alt="" class="img-result"></a>
 						</div>
@@ -221,9 +154,11 @@
 				</div>
 			</div>
 		</div>
-		<footer class="col-lg-12">
-			<div class="col-lg-3 col-lg-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
-			<div class="col-lg-3 col-lg-offset-2"><img src="http://placehold.it/400x300" alt=""></div>
-		</footer>
 	</div>
+	<!--footer-->
+	<footer class="col-xs-12">
+		<div class="col-md-3 col-md-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
+		<div class="col-md-3 col-md-offset-2 col-xs-12"><img class="img-responsive" src="http://placehold.it/400x300" alt=""></div>
+	</footer> 
 </body>
+</html>

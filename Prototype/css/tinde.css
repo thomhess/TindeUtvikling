@@ -151,6 +151,15 @@
 
 /*---------- Områder ----------*/
 
+.omraadetekst {
+	display: inline-block;
+	width: 60%;
+}
+
+.omraadebilde {
+	display: inline-block;
+}
+
 .tomte-cont {
 	width: 70%;
 	height: 100%;
@@ -160,6 +169,19 @@
 	margin-right: auto;
 }
 
+.filtreringcol h4 {
+	padding-left: 40px;
+	margin-bottom: 30px;
+}
+
+/*
+.filtreringcol h2, p {
+	display: inline-block;
+	overflow: auto;
+}
+
+*/
+
 .tomte-cont>div:nth-child(1)>h1 {
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -167,6 +189,10 @@
 }
 .area-result {
 	margin: 50px 0;
+}
+
+.area-result p {
+	width: 80%;
 }
 
 .area-result>div:nth-child(2) h2 {
