@@ -15,4 +15,6 @@ function initMap() {
           position: gala,
           map: map
         });
+        
+        map.setOptions({scrollwheel: false, disableDoubleClickZoom: true});
       }
