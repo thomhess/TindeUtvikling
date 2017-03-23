@@ -313,6 +313,11 @@
 	font-weight: normal;
 }
 
+.error {
+    visibility: hidden;
+    color: red;
+}
+
 /*---------- Footer ----------*/
 
 footer {

@@ -53,22 +53,26 @@
 		<!--skjema -->
 		<div class="row kontakt-bokser">
 			<div class="col-md-4 col-md-offset-4">
-				<form class="kontakt-form">
+				<form class="kontakt-form" id="myForm">
 				  <div class="form-group">
-				    <label for="navn">Navn</label>
-				    <input type="email" class="form-control">
+				    <label for="navn" >Navn</label>
+				    <input type="email" class="form-control" id="name">
+				    <span id="errorMsgName" class="error"></span>
 				  </div>
 				  <div class="form-group">
-				    <label for="epost">Epost</label>
-				    <input type="email" class="form-control">
+				    <label for="epost" >Epost</label>
+				    <input type="email" class="form-control" id="epost">
+				    <span id="errorMsgEmail" class="error"></span>
 				  </div>
 				  <div class="form-group">
-				    <label for="epost">Emne</label>
-				    <input type="email" class="form-control">
+				    <label for="emne" >Emne</label>
+				    <input type="emne" class="form-control" id="emne">
+				    <span id="errorMsgEmne" class="error"></span>
 				  </div>
 					<div class="form-group">
-					  <label for="comment">Melding</label>
-					  <textarea class="form-control" rows="8"></textarea>
+					  <label for="comment" >Melding</label>
+					  <textarea class="form-control" rows="8" id="comment"></textarea>
+					  <span id="errorMsgComment" class="error">Dette feltet er tomt</span>
 					</div>
 					<h4>Hvilke krav har du til en hyttetomt?</h4>
 					<div class="checkboxes">
@@ -97,6 +101,8 @@
 		<footer class="col-xs-12">
 			<div class="col-md-3 col-md-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
 			<div class="col-md-3 col-md-offset-2 col-xs-12"><img class="img-responsive" src="http://placehold.it/400x300" alt=""></div>
-		</footer>
+		</footer> 
+    <script src="js/formval.js"></script>
 </body>
+
 </html>
