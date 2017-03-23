@@ -174,14 +174,6 @@
 	margin-bottom: 30px;
 }
 
-/*
-.filtreringcol h2, p {
-	display: inline-block;
-	overflow: auto;
-}
-
-*/
-
 .tomte-cont>div:nth-child(1)>h1 {
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -212,6 +204,26 @@
 .img-result {
     max-width: 100%;
 }
+
+.innholdDiv button {
+	display: none;
+}
+
+.innholdDiv h1 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .filterDiv {
+    	display: none;
+    }
+
+    .innholdDiv button {
+	display: block;
+	}	
+}
+
+
 
 /*---------- Tomteområde ----------*/
 
