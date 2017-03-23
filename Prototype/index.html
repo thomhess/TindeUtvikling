@@ -80,9 +80,7 @@
 		<!--map-->
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="areamap">
-					<img src="http://placehold.it/1920x500?text=Kartoverområder" alt="Map of available areas">
-				</div>
+				<div id="googlemap"></div>
 			</div>
 		</div>
 		<!--footer-->
@@ -91,5 +89,8 @@
 			<div class="col-md-3 col-md-offset-2 col-xs-12"><img class="img-responsive" src="http://placehold.it/400x300" alt=""></div>
 		</footer>
 	</div>
+	<script src="js/index-map.js"></script>
+	<script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK90Dd0f4oVwQRhyxmIXiHQhP_5SUQNY0&callback=initMap"></script>
 </body>
 </html>
