@@ -3,6 +3,10 @@
 	margin-top: 80px;
 	padding: 0;
 }
+
+.container-fluid {
+	padding: 0px;
+}
 .col-lg-12, .col-lg-10, .col-lg-9, .col-xs-12 { 
 	padding: 0;
 }
@@ -62,7 +66,6 @@
 	margin-top: 400px;
 	background-color: white;
 }
-
 
 /*---------- Hjem ----------*/
 
@@ -240,6 +243,52 @@
 
 
 /*---------- Tomteområde ----------*/
+
+
+/*-------  Carousel----------  */
+header {
+  height: 50vh;
+}
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background-image: url("../img/4023-c4fd5d532cb57e7f1a84987c0b34352e-2b9a2424d58d18de7bb26e547aa2bbb8nordseter5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item:nth-child(2) {
+    background-image: url("../img/4086-1cfef19396bbccc6209b2f4c1b479812-47e49c0da3e9603a47f1a081dbb8e9delangrenn_esben_haakenstad_2007_917.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item:nth-child(3) {
+    background-image: url("../img/4043-e00dc7ee03d2e4bcb581ae8c4307992d-c12b241bb9e839b280f88c97cf76c598102.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item:nth-child(4) {
+    background-image: url("../img/4048-defa182b2ca32bb2ed821a7c5e266ab2-2f539a6dd8bb8e7b33f50d395a9a150cnordseter.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item:nth-child(5) {
+    background-image: url("../img/4085-77821423ee680532b11e3897bcecad91-0a76cdb094b91f513af5f4bd3d3ddb4aimg_1985.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*-------------------- */
 
 .tomt-info {
 	width: 37%;
