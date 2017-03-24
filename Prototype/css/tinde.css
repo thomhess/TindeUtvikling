@@ -67,6 +67,20 @@
 	background-color: white;
 }
 
+.indexlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 20%;
+}
+
+@media (max-width: 991px){
+    .indexlogo {
+        width: 40%;
+    }
+}
+
 /*---------- Hjem ----------*/
 
 .intro {
