@@ -123,10 +123,6 @@
 	padding-top: 15px;
 }
 
-.firstrowareas {
-	margin-bottom: 50px;
-}
-
 .area-filter ul {
 	display: flex;
 	justify-content: space-around;
@@ -140,13 +136,14 @@
 	color: white;
 }
 
-.area-cont {
-	margin-bottom: 50px;
+.nav-pills li:hover {
+	cursor: pointer;
 }
 
-.area-cont img {
+#area-cont img {
 	max-height: 100%;
 	max-width: 100%;
+	margin-bottom: 10%;
 }
 
 .expand-area {
