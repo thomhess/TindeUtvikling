@@ -31,8 +31,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav ">
-					<li><a href="index.html" >Hjem</a></li>
-					<li><a href="område.html" >Områder</a></li>
+					<li><a href="index.php" >Hjem</a></li>
+					<li><a href="område.php" >Områder</a></li>
 					<li><a href="omoss.html" >Hvem er vi</a></li>
 					<li><a href="kontakt.html" class="nav-contact">Kontakt</a></li>
 				</ul>
