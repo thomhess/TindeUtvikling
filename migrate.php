@@ -101,36 +101,84 @@ class Migrate{
         
         $this->insert('Ansatte', [
            [
-            'f_name' => 'agne',
-            'l_name' => 'odegaard',
-            'tlf'    => '94865063',
-            'email'  => 'mail@mail.mail',
-            'role'  => 'admin',
+            'f_name' => 'Bjørn',
+            'l_name' => 'Hermansen',
+            'tlf'    => '47360030',
+            'email'  => 'bjorn@tindeutvikling.no',
+            'role'   => 'selger',
+           ],
+        ]);
+        
+        $this->insert('Fasiliteter', [
+           [
+            'navn' => 'Strøm',
+            'type' => 'Teknisk',
            ],[
-            'f_name' => 'agne',
-            'l_name' => 'odegaard',
-            'tlf'    => '94865063',
-            'email'  => 'mail@mail.mail',
-            'role'  => 'admin',
+            'navn' => 'Vei',
+            'type' => 'Teknisk',
            ],[
-            'f_name' => 'agne',
-            'l_name' => 'odegaard',
-            'tlf'    => '94865063',
-            'email'  => 'mail@mail.mail',
-            'role'  => 'admin',
+            'navn' => 'Avløp',
+            'type' => 'Teknisk',
            ],[
-            'f_name' => 'agne',
-            'l_name' => 'odegaard',
-            'tlf'    => '94865063',
-            'email'  => 'mail@mail.mail',
-            'role'  => 'admin',
+            'navn' => 'Langrenn',
+            'type' => 'Aktiviteter',
+           ],
+        ]);
+        
+        $this->insert('Område', [
+           [
+            'name' => 'Hedemark',
            ],[
-            'f_name' => 'agne',
-            'l_name' => 'odegaard',
-            'tlf'    => '94865063',
-            'email'  => 'mail@mail.mail',
-            'role'  => 'admin',
-           ], 
+            'name' => 'Gudbrandsdalen',
+           ],[
+            'name' => 'Valdres',
+           ],
+        ]);
+        
+        $this->insert('Område_selger', [
+           [
+            'ansatt_id' => 1,
+            'feltnr' => 1,
+           ],
+        ]);
+        
+        $this->insert('Tomtefasiliteter', [
+           [
+            'feltnr' => 1,
+            'fasilitet_navn' => 'Strøm',
+           ],[
+            'feltnr' => 1,
+            'fasilitet_navn' => 'Vei',
+           ],
+        ]);
+        
+        $this->insert('Tomteområde', [
+           [
+            'navn' => 'Skreikampen',
+            'lat' => 60.567125,
+            'lng' => 11.149905,
+            'lng' => 11.149905,
+            'ingress' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.',
+            'oneliner' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+            'tekst' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.',
+            'reg_plan' => 'docs/regplan/omr/regplan1.pdf',
+            'reg_plan' => 'docs/regmap/omr/regmap1.pdf',
+            'area_name' => 'Valdres',
+           ],
+        ]);
+        
+        $this->insert('Tomter', [
+           [
+            'feltnr' => 1,
+            'tomtenr' => 1,
+            'gnr_bnr' => 'Gårdsnr 101, Bruksnummer 3',
+            'areal' => 300,
+            'pris' => 800000,
+            'tekst' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi.',
+            'status_solgt' => 1,
+            'reg_plan' => 'docs/regplan/omr/tomt/regplan1.pdf' ,
+            'reg_kart' => 'docs/regplan/omr/tomt/regkart1.pdf' ,
+           ],
         ]);
         
     }
