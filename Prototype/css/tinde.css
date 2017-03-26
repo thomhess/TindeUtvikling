@@ -329,8 +329,19 @@ body,
 	margin-right: 10px;
 }
 
+.dialog-boks .center-block {
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+
 .tomt-info {	
 	margin-top: 50px;
+	padding-right: 0px;
+}
+
+.tomt-info img {
+	margin-left: 10px;
 }
 
 .tomt-info h1 {
@@ -349,6 +360,10 @@ body,
 .tomt {
 	display: flex;
 	height: 100%;
+}
+
+.tomt-info h1 {
+	display: inline;
 }
 
 .tomt div:nth-child(1) img {
