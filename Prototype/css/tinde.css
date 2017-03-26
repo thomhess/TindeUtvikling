@@ -300,15 +300,24 @@ body,
 }
 
 /*-------------------- */
+.kart-tomter {
+	height: 60vh;
+	border: 1px solid gray
+}
 
-.tomt-info {
-	width: 37%;
-	height: 100%;
-	float: none;
-	overflow: auto;
+.dialog-boks {
+	height: 60vh;
+	padding-top: 50px;
+	padding-left: 15px;
+	border: 1px solid gray;
+}
+
+.dialog-boks a{
+	margin-right: 10px;
+}
+
+.tomt-info {	
 	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .tomt-info h1 {
