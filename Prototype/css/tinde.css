@@ -300,15 +300,37 @@ body,
 }
 
 /*-------------------- */
+.kart-tomter {
+	height: 60vh;
+	border-style: solid;
+	border-color: gray;
+    border-width: 1px 0px 1px 1px;
+}
 
-.tomt-info {
-	width: 37%;
-	height: 100%;
-	float: none;
-	overflow: auto;
+.kart-row {
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+.dialog-boks {
+	height: 60vh;
+	padding-top: 50px;
+	padding-left: 15px;
+	border: 1px solid gray;
+}
+
+@media only screen and (max-width: 991px) {
+    .dialog-boks {
+    	height: auto;
+	}
+}
+
+.dialog-boks a{
+	margin-right: 10px;
+}
+
+.tomt-info {	
 	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .tomt-info h1 {
@@ -345,16 +367,41 @@ body,
 	width: 300px;
 }
 
-.liste .row{
-	width: 70%;
-	margin: 50px auto;
-	float: none;
+.liste {
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+    .liste {
+		display: none;
+	}		
+}
+
+.visTomteliste button {
+	margin-top: 50px;
+	display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .visTomteliste button {
+		margin-top: 50px;
+		display: block;
+	}	
+}
+
+.visTomteliste button span {
+	padding-left: 5px;
+	top: 3px;
 }
 
 .print span {
 	font-size: 4rem;
 }
 
+.reg-selgere-row {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 .planer, .selgere {
 	margin-bottom: 50px;
 }
