@@ -6,5 +6,10 @@
 </head>
 <body>
     <?= time() ?>
+    <!--?foreach(tomt in tomter) {?>
+    <article data-gps="<?=tomt->geopoints" data-description="<?=tomt->description?>">
+    </article>
+    <?}?>
+    -->
 </body>
 </html>

@@ -45,22 +45,6 @@ document.getElementById("myForm").addEventListener("submit", function (e){
         }
     }
     
-    function validateEmne() {
-
-        theEmail = document.getElementById("emne").value;
-
-        if (theEmail == "") {
-            document.getElementById("errorMsgEmne").style.visibility = "visible";
-            document.getElementById("errorMsgEmne").innerHTML = "<b>Dette feltet er tomt</b>";
-            document.getElementById("emne").style.borderColor = "red";
-            return false;
-        } else {
-            document.getElementById("errorMsgEmne").style.visibility = "hidden";
-            document.getElementById("emne").style.borderColor = "";
-            return true;
-        }
-    }
-    
     function validateComment() {
 
         theEmail = document.getElementById("comment").value;
@@ -78,7 +62,7 @@ document.getElementById("myForm").addEventListener("submit", function (e){
     }
     
     
-    if ((validateName() & validateEmail() & validateEmne() & validateComment() ) == false) {
+    if ((validateName() & validateEmail() & validateComment() ) == false) {
         e.preventDefault();
     }
 });
