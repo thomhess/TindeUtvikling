@@ -6,4 +6,4 @@ hei jeg vil ha min første commit
 
 Min andre commitaasaasgggggg
 wdvwadcasvasd
-adasdada
+adasdadafsdfsdfsdfsdfsdfsdf

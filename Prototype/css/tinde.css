@@ -493,6 +493,10 @@ body,
     color: red;
 }
 
+#kontaktSubmit {
+	display: block;
+}
+
 /*---------- Footer ----------*/
 
 footer {
