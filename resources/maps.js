@@ -17,14 +17,14 @@ function initialize() {
   ];
     
     var triangleCoords2 = [
-    new google.maps.LatLng(33.5362500, -111.9267387),
-    new google.maps.LatLng(33.5104900, -111.9627876),
-    new google.maps.LatLng(33.5004687, -111.9027062)
+    new google.maps.LatLng(33.5362500, -111.9067387),
+    new google.maps.LatLng(33.5104900, -111.9027876),
+    new google.maps.LatLng(33.5105000, -111.9827062),
+    new google.maps.LatLng(33.5205000, -111.9927062)
   ];
   // Styling & Controls
   myPolygon = new google.maps.Polygon({
     paths: triangleCoords,
-    draggable: true, // turn off if it gets annoying
     editable: false,
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
@@ -35,7 +35,6 @@ function initialize() {
     
     myPolygon2 = new google.maps.Polygon({
     paths: triangleCoords2,
-    draggable: true, // turn off if it gets annoying
     editable: false,
     strokeColor: '#000000',
     strokeOpacity: 0.8,
