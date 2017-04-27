@@ -5,14 +5,17 @@ class dblogin {
 	public $db_host = 'localhost';
 	public $db_database = 'tindeutvikling';
 	public $db_user = 'root';
-	public $db_pass = '';
+	public $db_pass = 'root';
 
 	public function __construct() {
 		try {
 			$this->db = new PDO("mysql:host=$this->db_host; dbname=$this->db_database; charset=utf8", $this->db_user, $this->db_pass);
+            
+            $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 		} catch(PDOException  $e) {
 			die ("Error: ".$e->getMessage());
 		}
 	}
 }
-?>
+
+$dblogin = new dblogin();
