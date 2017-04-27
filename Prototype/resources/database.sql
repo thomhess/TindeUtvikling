@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: 25. Apr, 2017 20:52 PM
+-- Generation Time: 27. Apr, 2017 19:32 PM
 -- Server-versjon: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -13,6 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `TindeUtvikling`
 --
+-- CREATE DATABASE IF NOT EXISTS `TindeUtvikling` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+-- USE `TindeUtvikling`;
 
 -- --------------------------------------------------------
 
@@ -35,7 +37,8 @@ CREATE TABLE `Ansatte` (
 
 INSERT INTO `Ansatte` (`ansatt_id`, `f_name`, `l_name`, `tlf`, `email`, `role`) VALUES
 (17, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger'),
-(18, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger');
+(18, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger'),
+(19, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger');
 
 -- --------------------------------------------------------
 
@@ -133,7 +136,8 @@ CREATE TABLE `Tomteområde` (
 INSERT INTO `Tomteområde` (`felt_nr`, `navn`, `lat`, `lng`, `ingress`, `oneliner`, `tekst`, `reg_plan`, `reg_map`, `area_name`) VALUES
 (1, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres'),
 (2, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres'),
-(3, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres');
+(3, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres'),
+(4, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres');
 
 -- --------------------------------------------------------
 
@@ -158,7 +162,8 @@ CREATE TABLE `Tomter` (
 --
 
 INSERT INTO `Tomter` (`feltnr`, `tomtenr`, `gnr_bnr`, `areal`, `pris`, `tekst`, `status_solgt`, `reg_plan`, `reg_kart`) VALUES
-(1, 1, 'Gårdsnr 101, Bruksnummer 3', 300, 800000, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi.', 1, 'docs/regplan/omr/tomt/regplan1.pdf', 'docs/regplan/omr/tomt/regkart1.pdf');
+(1, 1, 'Gårdsnr 101, Bruksnummer 3', 300, 800000, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi.', 1, 'docs/regplan/omr/tomt/regplan1.pdf', 'docs/regplan/omr/tomt/regkart1.pdf'),
+(1, 2, 'Gårdsnr 101, Bruksnummer 4', 600, 800000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf');
 
 -- --------------------------------------------------------
 
@@ -167,6 +172,7 @@ INSERT INTO `Tomter` (`feltnr`, `tomtenr`, `gnr_bnr`, `areal`, `pris`, `tekst`, 
 --
 
 CREATE TABLE `Tomter_Geopts` (
+  `id` int(11) NOT NULL,
   `feltnr` bigint(20) NOT NULL,
   `tomtenr` bigint(20) NOT NULL,
   `lat` decimal(9,6) NOT NULL,
@@ -177,10 +183,15 @@ CREATE TABLE `Tomter_Geopts` (
 -- Dataark for tabell `Tomter_Geopts`
 --
 
-INSERT INTO `Tomter_Geopts` (`feltnr`, `tomtenr`, `lat`, `lng`) VALUES
-(1, 1, '33.500469', '-111.902706'),
-(1, 1, '33.510488', '-111.962788'),
-(1, 1, '33.536248', '-111.926739');
+INSERT INTO `Tomter_Geopts` (`id`, `feltnr`, `tomtenr`, `lat`, `lng`) VALUES
+(1, 1, 1, '60.566917', '11.145628'),
+(2, 1, 1, '60.566922', '11.146272'),
+(3, 1, 1, '60.567167', '11.146267'),
+(4, 1, 1, '60.567186', '11.145639'),
+(5, 1, 2, '60.566284', '11.145762'),
+(6, 1, 2, '60.566342', '11.147195'),
+(7, 1, 2, '60.566727', '11.147141'),
+(8, 1, 2, '60.566756', '11.146256');
 
 --
 -- Indexes for dumped tables
@@ -235,7 +246,8 @@ ALTER TABLE `Tomter`
 -- Indexes for table `Tomter_Geopts`
 --
 ALTER TABLE `Tomter_Geopts`
-  ADD PRIMARY KEY (`feltnr`,`tomtenr`,`lat`,`lng`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `feltnr` (`feltnr`,`tomtenr`,`lat`,`lng`) USING BTREE;
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -245,12 +257,17 @@ ALTER TABLE `Tomter_Geopts`
 -- AUTO_INCREMENT for table `Ansatte`
 --
 ALTER TABLE `Ansatte`
-  MODIFY `ansatt_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `ansatt_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `Tomteområde`
 --
 ALTER TABLE `Tomteområde`
-  MODIFY `felt_nr` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `felt_nr` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `Tomter_Geopts`
+--
+ALTER TABLE `Tomter_Geopts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- Begrensninger for dumpede tabeller
 --
@@ -286,3 +303,120 @@ ALTER TABLE `Tomter`
 --
 ALTER TABLE `Tomter_Geopts`
   ADD CONSTRAINT `geopts_feltnr_tomtenr_fk` FOREIGN KEY (`feltnr`,`tomtenr`) REFERENCES `Tomter` (`feltnr`, `tomtenr`);
+--
+-- Database: `imt3851_db`
+--
+CREATE DATABASE IF NOT EXISTS `imt3851_db` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `imt3851_db`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `articles`
+--
+
+CREATE TABLE `articles` (
+  `id` int(11) NOT NULL,
+  `datetime` int(11) DEFAULT NULL,
+  `heading` varchar(50) DEFAULT NULL,
+  `text` text,
+  `category` varchar(10) DEFAULT NULL,
+  `rating` int(11) DEFAULT NULL,
+  `publisher` varchar(15) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `articles`
+--
+
+INSERT INTO `articles` (`id`, `datetime`, `heading`, `text`, `category`, `rating`, `publisher`) VALUES
+(1, 1492009049, 'Hello world!', 'This is the very first article, isnt that awesome?', 'News', 0, 'Admin'),
+(2, 1492009200, 'Fake News', 'This is a really fake news article, inspired by the 45th president of the United States.', 'News', 0, 'testuser');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `categories`
+--
+
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL,
+  `category` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `categories`
+--
+
+INSERT INTO `categories` (`id`, `category`) VALUES
+(1, 'Sport'),
+(2, 'News'),
+(3, 'Other');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `username` varchar(15) DEFAULT NULL,
+  `password` char(250) DEFAULT NULL,
+  `first_name` varchar(30) DEFAULT NULL,
+  `surname` varchar(30) DEFAULT NULL,
+  `email` varchar(64) DEFAULT NULL,
+  `usertype` int(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `users`
+--
+
+INSERT INTO `users` (`user_id`, `username`, `password`, `first_name`, `surname`, `email`, `usertype`) VALUES
+(1, 'admin', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Admin', 'Bruker', 'admin@nettavis.no', 1),
+(2, 'thomhess', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Thomas', 'Hesselberg', 'thomhes@stud.ntnu.no', 1),
+(3, 'kolloen', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Øivind', 'Kolloen', 'oeivind.kolloen@ntnu.no', 2),
+(4, 'testuser', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Test', 'Bruker', 'testbruker@test.no', 2);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `articles`
+--
+ALTER TABLE `articles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
