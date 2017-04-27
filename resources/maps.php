@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="maps.css">
     <script src="maps.js"></script>
     <script>
-         var triangleCoords = [
+         
+        var triangleCoords = [
              <?php foreach($database as $row) { ?>
                 new google.maps.LatLng( <?= $row['lat'] ?>,  <?= $row['lng'] ?>),
              <?php } ?>
