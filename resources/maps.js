@@ -16,6 +16,8 @@ function initialize() {
     new google.maps.LatLng(33.5004686, -111.9027061)
   ];
     
+   
+    
     var triangleCoords2 = [
     new google.maps.LatLng(33.5362500, -111.9067387),
     new google.maps.LatLng(33.5104900, -111.9027876),
