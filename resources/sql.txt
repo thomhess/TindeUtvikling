@@ -1,0 +1,288 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: 25. Apr, 2017 20:52 PM
+-- Server-versjon: 5.6.35
+-- PHP Version: 7.1.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `TindeUtvikling`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Ansatte`
+--
+
+CREATE TABLE `Ansatte` (
+  `ansatt_id` bigint(20) NOT NULL,
+  `f_name` varchar(50) NOT NULL,
+  `l_name` varchar(50) NOT NULL,
+  `tlf` varchar(8) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `role` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Ansatte`
+--
+
+INSERT INTO `Ansatte` (`ansatt_id`, `f_name`, `l_name`, `tlf`, `email`, `role`) VALUES
+(17, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger'),
+(18, 'Bjørn', 'Hermansen', '47360030', 'bjorn@tindeutvikling.no', 'selger');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Fasiliteter`
+--
+
+CREATE TABLE `Fasiliteter` (
+  `navn` varchar(50) NOT NULL,
+  `type` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Fasiliteter`
+--
+
+INSERT INTO `Fasiliteter` (`navn`, `type`) VALUES
+('Avløp', 'Teknisk'),
+('Langrenn', 'Aktiviteter'),
+('Strøm', 'Teknisk'),
+('Vei', 'Teknisk');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Område`
+--
+
+CREATE TABLE `Område` (
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Område`
+--
+
+INSERT INTO `Område` (`name`) VALUES
+('Gudbrandsdalen'),
+('Hedemark'),
+('Valdres');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Område_selger`
+--
+
+CREATE TABLE `Område_selger` (
+  `ansatt_id` bigint(20) NOT NULL,
+  `feltnr` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Tomtefasiliteter`
+--
+
+CREATE TABLE `Tomtefasiliteter` (
+  `feltnr` bigint(20) NOT NULL,
+  `fasilitet_navn` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Tomtefasiliteter`
+--
+
+INSERT INTO `Tomtefasiliteter` (`feltnr`, `fasilitet_navn`) VALUES
+(1, 'Strøm'),
+(1, 'Vei');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Tomteområde`
+--
+
+CREATE TABLE `Tomteområde` (
+  `felt_nr` bigint(20) NOT NULL,
+  `navn` varchar(50) NOT NULL,
+  `lat` decimal(9,6) NOT NULL,
+  `lng` decimal(9,6) NOT NULL,
+  `ingress` text NOT NULL,
+  `oneliner` text NOT NULL,
+  `tekst` longtext NOT NULL,
+  `reg_plan` varchar(500) NOT NULL,
+  `reg_map` varchar(500) NOT NULL,
+  `area_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Tomteområde`
+--
+
+INSERT INTO `Tomteområde` (`felt_nr`, `navn`, `lat`, `lng`, `ingress`, `oneliner`, `tekst`, `reg_plan`, `reg_map`, `area_name`) VALUES
+(1, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres'),
+(2, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres'),
+(3, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Tomter`
+--
+
+CREATE TABLE `Tomter` (
+  `feltnr` bigint(20) NOT NULL,
+  `tomtenr` bigint(20) NOT NULL,
+  `gnr_bnr` varchar(50) NOT NULL,
+  `areal` int(11) NOT NULL,
+  `pris` int(11) NOT NULL,
+  `tekst` longtext NOT NULL,
+  `status_solgt` tinyint(1) NOT NULL,
+  `reg_plan` varchar(500) NOT NULL,
+  `reg_kart` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Tomter`
+--
+
+INSERT INTO `Tomter` (`feltnr`, `tomtenr`, `gnr_bnr`, `areal`, `pris`, `tekst`, `status_solgt`, `reg_plan`, `reg_kart`) VALUES
+(1, 1, 'Gårdsnr 101, Bruksnummer 3', 300, 800000, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi.', 1, 'docs/regplan/omr/tomt/regplan1.pdf', 'docs/regplan/omr/tomt/regkart1.pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur for tabell `Tomter_Geopts`
+--
+
+CREATE TABLE `Tomter_Geopts` (
+  `feltnr` bigint(20) NOT NULL,
+  `tomtenr` bigint(20) NOT NULL,
+  `lat` decimal(9,6) NOT NULL,
+  `lng` decimal(9,6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dataark for tabell `Tomter_Geopts`
+--
+
+INSERT INTO `Tomter_Geopts` (`feltnr`, `tomtenr`, `lat`, `lng`) VALUES
+(1, 1, '33.500469', '-111.902706'),
+(1, 1, '33.510488', '-111.962788'),
+(1, 1, '33.536248', '-111.926739');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `Ansatte`
+--
+ALTER TABLE `Ansatte`
+  ADD PRIMARY KEY (`ansatt_id`);
+
+--
+-- Indexes for table `Fasiliteter`
+--
+ALTER TABLE `Fasiliteter`
+  ADD PRIMARY KEY (`navn`);
+
+--
+-- Indexes for table `Område`
+--
+ALTER TABLE `Område`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `Område_selger`
+--
+ALTER TABLE `Område_selger`
+  ADD PRIMARY KEY (`ansatt_id`,`feltnr`),
+  ADD KEY `os_tomtefac_fk` (`feltnr`);
+
+--
+-- Indexes for table `Tomtefasiliteter`
+--
+ALTER TABLE `Tomtefasiliteter`
+  ADD PRIMARY KEY (`feltnr`,`fasilitet_navn`),
+  ADD KEY `tf_fasilitetnavn_fk` (`fasilitet_navn`);
+
+--
+-- Indexes for table `Tomteområde`
+--
+ALTER TABLE `Tomteområde`
+  ADD PRIMARY KEY (`felt_nr`),
+  ADD KEY `tomteomrade_areaname_fk` (`area_name`);
+
+--
+-- Indexes for table `Tomter`
+--
+ALTER TABLE `Tomter`
+  ADD PRIMARY KEY (`feltnr`,`tomtenr`);
+
+--
+-- Indexes for table `Tomter_Geopts`
+--
+ALTER TABLE `Tomter_Geopts`
+  ADD PRIMARY KEY (`feltnr`,`tomtenr`,`lat`,`lng`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `Ansatte`
+--
+ALTER TABLE `Ansatte`
+  MODIFY `ansatt_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+--
+-- AUTO_INCREMENT for table `Tomteområde`
+--
+ALTER TABLE `Tomteområde`
+  MODIFY `felt_nr` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- Begrensninger for dumpede tabeller
+--
+
+--
+-- Begrensninger for tabell `Område_selger`
+--
+ALTER TABLE `Område_selger`
+  ADD CONSTRAINT `os_ansattid_fk` FOREIGN KEY (`ansatt_id`) REFERENCES `Ansatte` (`ansatt_id`),
+  ADD CONSTRAINT `os_tomtefac_fk` FOREIGN KEY (`feltnr`) REFERENCES `Tomteområde` (`felt_nr`);
+
+--
+-- Begrensninger for tabell `Tomtefasiliteter`
+--
+ALTER TABLE `Tomtefasiliteter`
+  ADD CONSTRAINT `tf_fasilitetnavn_fk` FOREIGN KEY (`fasilitet_navn`) REFERENCES `Fasiliteter` (`navn`),
+  ADD CONSTRAINT `tf_feltnr_fk` FOREIGN KEY (`feltnr`) REFERENCES `Tomteområde` (`felt_nr`);
+
+--
+-- Begrensninger for tabell `Tomteområde`
+--
+ALTER TABLE `Tomteområde`
+  ADD CONSTRAINT `tomteomrade_areaname_fk` FOREIGN KEY (`area_name`) REFERENCES `Område` (`name`);
+
+--
+-- Begrensninger for tabell `Tomter`
+--
+ALTER TABLE `Tomter`
+  ADD CONSTRAINT `tomter_feltnr_fk` FOREIGN KEY (`feltnr`) REFERENCES `Tomteområde` (`felt_nr`);
+
+--
+-- Begrensninger for tabell `Tomter_Geopts`
+--
+ALTER TABLE `Tomter_Geopts`
+  ADD CONSTRAINT `geopts_feltnr_tomtenr_fk` FOREIGN KEY (`feltnr`,`tomtenr`) REFERENCES `Tomter` (`feltnr`, `tomtenr`);
