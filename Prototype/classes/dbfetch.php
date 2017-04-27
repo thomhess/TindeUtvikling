@@ -1,5 +1,5 @@
-<?php require('dblogin.php');
-
+<?php // require('dblogin.php');
+/*
 class fetchTomter {
 
 	public function __construct() {
@@ -16,11 +16,11 @@ class fetchTomter {
 		}
 		$this->dbc = null;
 	}
-}
+}*/
 
 
 class fetchTomteområder {
-
+/*
 	public function __construct() {
 		$this->dbc = new dblogin();
 	}
@@ -46,8 +46,8 @@ class fetchTomteområder {
 		}
 		$this->dbc = null;
 	}
-
-/*	public $tomteomrader = array(
+*/
+	public $tomteomrader = array(
 		array("Feltnr"=>"12345", "Navn"=>"Gålåtoppen", "Oneliner"=>"Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.", "Tekst"=>"Blah BLAH blah", "Bilde"=>"img/4046-f8184968280632c1e0dcddfb36da6de0-7977f928de23ce5601691f2c748a301324.jpg", "Område"=>"Gudbrandsdalen Nord", "Strøm"=>"Y", "Vann"=>"Y", "Avløp"=>"Y", "Vei"=>"Y", "Tur"=>"Y", "Langrenn"=>"Y", "Alpint"=>"Y"),
 		array("Feltnr"=>"23523", "Navn"=>"Femundsmarka", "Oneliner"=>"En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!", "Tekst"=>"Blah BLAH BLAH", "Bilde"=>"img/4039-c544bd176878d642a7883180c6c69d9e-2c4541be28649e23415f7f67b5bc7e5fnordseter1.jpg", "Område"=>"Hedmark", "Strøm"=>"Y", "Vann"=>"Y", "Avløp"=>"Y", "Jakt"=>"Y", "Tur"=>"Y", "Fiske"=>"Y", "Langrenn"=>"Y"),
 		array("Feltnr"=>"82342", "Navn"=>"Liabygda", "Oneliner"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae blanditiis eius enim esse cumque eligendi voluptatem doloremque libero doloribus debitis animi!", "Tekst"=>"Blahrgh blah blurgh", "Bilde"=>"img/4023-c4fd5d532cb57e7f1a84987c0b34352e-2b9a2424d58d18de7bb26e547aa2bbb8nordseter5.jpg", "Område"=>"Sør-Trøndelag", "Strøm"=>"Y", "Fiske"=>"Y", "Tur"=>"Y", "Langrenn"=>"Y"),
@@ -58,7 +58,7 @@ class fetchTomteområder {
 		array("Feltnr"=>"43563", "Navn"=>"Haugsetra Hyttegrend", "Oneliner"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae blanditiis eius enim esse cumque eligendi voluptatem doloremque libero doloribus debitis animi!", "Tekst"=>"Blahrgh blah blurgh", "Bilde"=>"img/4103-3bd758f731ecdbb498f15e90712fd93a-b4dc47ac9839afe4cba7d8ce3b5d1ccd02.jpg", "Område"=>"Gudbrandsdalen Nord", "Strøm"=>"Y", "Avløp"=>"Y", "Vei"=>"Y", "Tur"=>"Y", "Fiske"=>"Y"),
 		array("Feltnr"=>"34678", "Navn"=>"Ringebu Panorama", "Oneliner"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae blanditiis eius enim esse cumque eligendi voluptatem doloremque libero doloribus debitis animi!", "Tekst"=>"Blahrgh blah blurgh", "Bilde"=>"img/4105-427fe031bcddffb5a05362402216573d-12bfe86bc22a2bcf57e972444fbdd0fa05utsikt.jpg", "Område"=>"Gudbrandsdalen Sør", "Strøm"=>"Y", "Avløp"=>"Y", "Vei"=>"Y", "Tur"=>"Y", "Jakt"=>"Y", "Langrenn"=>"Y"),
 		array("Feltnr"=>"34678", "Navn"=>"Hjerkinnhø Hyttegrend", "Oneliner"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae blanditiis eius enim esse cumque eligendi voluptatem doloremque libero doloribus debitis animi!", "Tekst"=>"Blahrgh blah blurgh", "Bilde"=>"img/4142-e4b895d6b72df2258affe33a1c1a7155-8be89426803c20a68642b95875a86a5ehjerkinnhhyttegrend.jpg", "Område"=>"Gudbrandsdalen Sør", "Strøm"=>"Y", "Avløp"=>"Y", "Vei"=>"Y", "Tur"=>"Y", "Jakt"=>"Y", "Langrenn"=>"Y", "Fiske"=>"Y")
-		);*/
+		);
 }
 
 
