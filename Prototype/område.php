@@ -1,6 +1,6 @@
 <?php 
 	include("classes/dbfetch.php");
-	$omrader = new fetchData();
+	$omrader = new fetchTomteområder();
 ?>
 <!DOCTYPE html>
 <html lang="en">
