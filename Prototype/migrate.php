@@ -31,8 +31,8 @@ class Migrate extends dblogin {
     public function run(){
         
         $this->query('DROP DATABASE IF EXISTS '.$this->db_database);
-        $drop = $this->query('CREATE DATABASE IF NOT EXISTS `'.$this->db_database.'` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; USE `'.$this->db_database.'`;');
-            
+        $drop = $this->query('CREATE DATABASE IF NOT EXISTS `' . $this->db_database . '` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; USE `'.$this->db_database.'`;');
+        print_r($this->db->errorInfo());
 		if($drop){
 			 $this->query(file_get_contents('resources/database.sql'));
 		}
@@ -42,8 +42,6 @@ class Migrate extends dblogin {
     
 }
 
-
 $m = new Migrate();
 
 $m->run();
-

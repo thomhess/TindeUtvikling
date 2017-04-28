@@ -3,7 +3,7 @@
 // function to setup a connection.
 class dblogin {
 	public $db_host = 'localhost';
-	public $db_database = 'TindeUtvikling';
+	public $db_database = 'blablabla';
 	public $db_user = 'root';
 	public $db_pass = 'root';
     public $db;
@@ -14,7 +14,15 @@ class dblogin {
             
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 		} catch(PDOException  $e) {
-			die ("Error: ".$e->getMessage());
+            
+             try {
+                $this->db = new PDO("mysql:host=$this->db_host; dbname=; charset=utf8", $this->db_user, $this->db_pass);
+
+                $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+            } catch(PDOException  $e) {
+
+                die ("Error: ".$e->getMessage());
+            }
 		}
 	}
 }
