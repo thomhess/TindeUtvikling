@@ -430,6 +430,10 @@ body,
 	margin: 0 10px;
 }
 
+#printknapp{ 
+	cursor: pointer; 
+}
+
 /*---------- Hvem er vi ----------*/
 
 .omoss-cont {
