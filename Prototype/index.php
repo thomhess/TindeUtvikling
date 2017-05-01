@@ -18,27 +18,9 @@
 </head>
 <body>
 	<div class="container">
-	<!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-       
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="meny-knapp navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Meny <i class="fa fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
-					<li><a href="index.php" >Hjem</a></li>
-					<li><a href="område.php" >Områder</a></li>
-					<li><a href="omoss.html" >Hvem er vi</a></li>
-					<li><a href="kontakt.html" class="nav-contact">Kontakt</a></li>
-				</ul>
-            </div>
-            <!-- /.navbar-collapse -->
-    </nav>
+	<!-- Navigation from navigation.php-->
+		<?php include("navigation.php"); ?>
+    
     <!--header-->
     <div class="row">
 		<div class="col-xs-12 header">
@@ -76,25 +58,10 @@
 			<div id="indexmap" class="googlemap"></div>
 		</div>
 	</div>
-	<!--footer-->
-	<footer class="col-xs-12 text-center">
-		<h3>KONTAKT OSS</h3>
-		<div><span class="glyphicon glyphicon-phone-alt"></span><p>45 24 81 89</p></div>
-		<div><span class="glyphicon glyphicon-envelope"></span><p>Post@tinde.no</p></div>
-		<div><span class="glyphicon glyphicon-map-marker"></span><p>Frøya 2630 Ringbu</p></div>
-		<br>
-		<div><a href="#">www.tindehytter.no</a></div>
-		<div class="bottom-footer-div">
-			<h4>Våres sosiale medier</h4>
-			<a href="#"><img src="./img/facebook-icon.png " height="25" width="25" ></a>	
-			<a href="#"><img src="./img/twitter-icon.png" height="25" width="25" ></a>
-			<a href="#"><img src="./img/insta-icon.png " height="25" width="25" ></a>
-		</div>
-		
-
-	</footer>
+	<!--footer from php file-->
+	<?php include("footer.php"); ?>
+	
 	</div>
-
 	<!-- Javascript: Map -->
 	<script src="js/index-map.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK90Dd0f4oVwQRhyxmIXiHQhP_5SUQNY0&callback=initMap"></script>

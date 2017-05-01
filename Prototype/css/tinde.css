@@ -4,7 +4,6 @@ body {
 
 .container {
 	width: 100%;
-	margin-top: 80px;
 	padding: 0;
 }
 
@@ -27,32 +26,67 @@ body {
 /*---------- Nav bar ----------*/
 
 .navbar {
-	background: #fff;
+	background-color: #004B76;
 	border-bottom-width: 0px;
 }
 
-.navbar-nav {
-	width: 100%;
+.navbar .navbar-brand {
+	 padding-left:60px;
+	 padding-right: 30px;
 }
 
-.navbar-nav li {
-	text-align: center;
-	width: 25%;
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-.nav-contact {
-	font-weight: bold;
+.navbar-default .navbar-brand {
+    color: white;
 }
 
-.meny-knapp {
-	margin-left: 15px;
+.navbar-default .navbar-brand:hover {
+    background-color: #0095CF;
+    color: white;
 }
 
-#bs-example-navbar-collapse-1 ul li a {
-	color: #337ab7;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #0095CF;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-right: 35px;
+    padding-right: 10px;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;   
+}
 
+.nav>li>a {
+    padding-right: 35px;
+}
+
+.nav li:not(#kontakt-knapp):hover {
+    background-color: #0095CF;
+}
+
+.navbar-default .navbar-toggle {
+    margin-right: 35px;
+}
+
+#kontakt-knapp:hover{
+
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    	width: 135px;
+    	margin-left: 25px;
+	}
+}
 
 /*---------- Header Image ----------*/
 
@@ -503,6 +537,13 @@ body,
 
 #kontaktSubmit {
 	display: block;
+	background-color: #0095CF;
+	color: white;
+	width: 150px; 
+}
+
+#kontaktSubmit:hover {
+	background-color: #c66154;	
 }
 
 /*---------- Footer ----------*/
