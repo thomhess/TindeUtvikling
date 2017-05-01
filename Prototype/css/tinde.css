@@ -1,3 +1,7 @@
+body {
+	font-family: "Sanseriffic", regular;
+}
+
 .container {
 	width: 100%;
 	margin-top: 80px;
@@ -508,19 +512,58 @@ footer {
 	background: #444;
 }
 
-footer h2 {
-	margin-top: 0px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+footer p {
+	display: inline;
+	font-size: 16px;
 }
 
-footer img {
+footer a {
+	color: #ddd;
+	text-decoration: underline;
+}
+
+footer div:nth-child(4) p {
+	margin-right: 30px;
+}
+
+footer div:nth-child(3) p {
+	margin-right: 30px;
+}
+
+footer div:nth-child(2) p {
+	margin-right: 30px;
+}
+
+footer div:nth-child(3) span {
+	margin-left: 14px;
+}
+footer div:nth-child(4) span {
+	margin-left: 40px;
+}
+
+footer span {
+	margin-right: 15px;
+}
+
+footer h3 {
+	color: white;
+	margin-top: 0px;
 	padding-top: 30px;
-	padding-bottom: 30px;
-	width: 400px;
-	height: auto;
+	padding-bottom: 20px;
 }
 
 footer>div {
 	color: #ddd;
 }
+
+footer .glyphicon {
+    font-size: 20px;
+}
+
+.bottom-footer-div{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+
