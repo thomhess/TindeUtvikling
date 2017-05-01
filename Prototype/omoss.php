@@ -28,44 +28,54 @@
 	<!--Hvem er vi content-->
 	<div class="col-xs-12 innholdDiv">
 		<div class="row">
-			<div class="col-md-5 col-md-offset-3 col-xs-9 col-xs-offset-2 ">
+			<div class="col-md-6 col-md-offset-3 col-xs-9 col-xs-offset-2 ">
 				<h1>Hvem er vi</h1>
+				<br>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, totam, quod! Nihil rem, tempora deleniti. Laborum neque consequatur, obcaecati aperiam quo id molestiae sunt, explicabo officiis unde quasi sed illum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsa cum amet ut minus suscipit tenetur ab, et quisquam repudiandae nulla porro sint quo placeat temporibus similique excepturi rem aperiam!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<h1>Våre selgere</h1>
-				<br>
-				<br>
 			</div>
 		</div>
 		<div class="row selger-info">
 			<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
-				<img src="http://placehold.it/150x150" alt="">
+				<img src="./img/selger1.jpg" alt="">
 			</div>
 			<div class="col-xs-6 col-md-3 col-md-offset-1">
+				<br>
+				<br>
 				<h2>Lise Hansen</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+				<p>Daglig leder</p>
+				<p>Tlf: 45 24 81 89</p>
+				<a href=""><b>lise_hansen@tindeutvikling.no</b></a>
 			</div>
 		</div>
 		<div class="row selger-info">
 		<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
-				<img src="http://placehold.it/150x150" alt="">
+				<img src="./img/selger2.jpg" alt="">
 			</div>
 			<div class="col-xs-6 col-md-3 col-md-offset-1">
+				<br>
+				<br>
 				<h2>Jan Jansen</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+				<p>Selger</p>
+				<p>Tlf: 89 23 81 89</p>
+				<a href=""><b>jan_jansen@tindeutvikling.no</b></a>
 			</div>
 		</div>
 		<div class="row selger-info">
 		<div class="col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-3">
-				<img src="http://placehold.it/150x150" alt="">
+				<img src="./img/selger3.jpg" alt="">
 			</div>
 			<div class="col-xs-6 col-md-3 col-md-offset-1">
-				<h2>Siri Siridottir</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto ipsa quo consequuntur cum, totam aut dolorum voluptas officiis sint minima vel, debitis maxime, error fugit sequi aliquam porro, est.</p>
+				<br>
+				<br>
+				<h2>Knut Hansen</h2>
+				<p>Selger</p>
+				<p>Tlf: 55 23 81 87</p>
+				<a href=""><b>knut_hansen@tindeutvikling.no</b></a>
 			</div>
 		</div>
 		<br>
