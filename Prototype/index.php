@@ -19,7 +19,7 @@
 <body>
 	<div class="container">
 	<!-- Navigation from navigation.php-->
-		<?php include("navigation.php"); ?>
+	<?php include("navigation.php"); ?>
     
     <!--header-->
     <div class="row">

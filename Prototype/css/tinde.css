@@ -393,6 +393,12 @@ body,
 .btn-kontakt {
 	margin: 60px auto;
 	display: block;
+	background-color: #0095CF;
+	color: white;
+}
+
+.btn-kontakt:hover {
+	background-color: #c66154;
 }
 
 .tomt {
