@@ -3,7 +3,7 @@
 // function to setup a connection.
 class dblogin {
 	public $db_host = 'localhost';
-	public $db_database = 'blablabla';
+	public $db_database = 'TindeUtvikling';
 	public $db_user = 'root';
 	public $db_pass = 'root';
     public $db;
