@@ -63,3 +63,7 @@ a:hover {
   padding-top: 10px;
   width: 270px;
 }
+
+#tomtebox h3 {
+    color: black;
+}

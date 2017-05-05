@@ -142,10 +142,12 @@ function checkExist($dbtomteområde) {
                 <div id="map-canvas"></div>
             </div>
             <div class="col-md-3 col-xs-12 dialog-boks">
+               <div id="tomtebox">
                 <h3>Tomt:</h3>
                 <p>Pris: </p>
                 <p>Gårdsnr.: </p>
                 <p>Merknad: Klikk på en tomt i kartet for å få mer informasjon om tomten</p>
+                </div>
                 <a href="../kontakt.html" class="btn btn-default btn-lg btn-kontakt">Send forespørsel på Tomt</a>
 
                 <div class="center-block">
