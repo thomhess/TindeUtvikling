@@ -71,7 +71,7 @@ $(document).ready(function () {
 			$tomteomrader = [];
 			for (var i = 0; i < $omradeFilter.length; i++) {
 				for (var t = 0; t < $phpTomteomrader.length; t++) {
-					if ($phpTomteomrader[t]["Område"] == $omradeFilter[i]) {
+					if ($phpTomteomrader[t]["area_name"] == $omradeFilter[i]) {
 						$tomteomrader.push($phpTomteomrader[t]);
 					}
 				}
@@ -93,6 +93,12 @@ $(document).ready(function () {
 		outputPage();
 	};
 
+	function replaceSpaceName(tomteomradenavn) {
+		var str = tomteomradenavn;
+		str = str.replace(/\s+/g, '-').toLowerCase();
+		return str;
+	}
+
 	//Velger riktig DOM output funksjon avhengig av hvilken side man er på (index.php eller område.php).
 	function outputPage() {
 		if ($("#search-result").length > 0) {
@@ -109,20 +115,20 @@ $(document).ready(function () {
 			for (var i = 0; i < $tomteomrader.length; i++) {
 			    $("<div>", {class: "row area-result"}).append(
 			        $("<div>", {class: "col-lg-4"}).append(
-			            $("<a>", {href: "område/skreikampen.html"}).append( //Denne nødvendig???
+			            $("<a>", {href: "tomteområde/" + replaceSpaceName($tomteomrader[i]["navn"]) }).append(
 			            	$("<img>", {
-			            		src: $tomteomrader[i]["Bilde"], // Hvordan velger vi hvilket bilde som skal vises (fra array).
-			            		alt: "Bilde av " + $tomteomrader[i]["Navn"] + ".",
+			            		src: $tomteomrader[i]["thumbnail"], //Thumbnail bilde
+			            		alt: "Bilde av " + $tomteomrader[i]["navn"] + ".", //Alt text til bilde.
 			            		class: "img-result"
 			            	}))
 			        ), 
 			        $("<div>", {class: "col-lg-8"}).append(
 			            $("<h2>").text(
-			                $tomteomrader[i].Navn //Navn på området
+			                $tomteomrader[i].navn //Navn på området
 			            )
 			        ).append(
 			        $("<p>").text(
-			        	$tomteomrader[i].Oneliner //Tekst/Oneliner om området.
+			        	$tomteomrader[i].oneliner //Tekst/Oneliner om området.
 			        ) 
 			    )).appendTo("#search-result")
 			};
@@ -138,22 +144,22 @@ $(document).ready(function () {
 		while (i < 8) {
 			if (i < $tomteomrader.length) {
 			$("<div>", {class: "col-md-3"}).append(
-				$("<a>", {href: "område/skreikampen.html"}).append( //Link til underside. Kan bygges dynamisk, se under.
+				$("<a>", {href: "tomteområde/" + replaceSpaceName($tomteomrader[i]["navn"]) }).append( //Link til underside. Kan bygges dynamisk, se under.
 				$("<img>", {
-					src: $tomteomrader[i]["Bilde"],  // Hvordan velger vi hvilket bilde som skal vises (fra array).
-					alt: "Bilde av " + $tomteomrader[i]["Navn"] + "."
+					src: $tomteomrader[i]["thumbnail"],  // Hvordan velger vi hvilket bilde som skal vises (fra array). Spesifike filnavn. $tomteomrader[i]["Bilde"]
+					alt: "Bilde av " + $tomteomrader[i]["navn"] + "."
 					}))).appendTo("#area-cont")
 			}
 			i++;
 		}
 	}
-
+/*
 	// Sender bruker videre til tomteområde undersiden, uansett hvor man trykker hen i area-result containeren.
 	$('.area-result').click(function(e) {
 		window.location.href = "område/skreikampen.html"; 
 		//Litt usikker på hvordan vi går fram for å gjøre denne. De må nok ha linken allerede tilknyttet seg på en måte når de blir sendt til DOM. 
 		//Kanskje fetches fra a? ELLER kun hente ut navnet på området fra DOM og sette det sammen med resten av filepathen ("område/"), siden alle undersidene ligger på samme sted uansett.
 	})
-	
+	*/
 });
 

@@ -1,6 +1,10 @@
 <?php 
-	include("classes/dbfetch.php");
-	$omrader = new fetchTomteområder();
+	require("classes/dbfetch.php");
+	$fetchTomteområder = new fetchTomteområder();
+	$områder = $fetchTomteområder->fetchAll();
+	$fasiliteter = $fetchTomteområder->fetchAllTomtefasiliteter();
+
+	$tomteområder = $fetchTomteområder->mergeTomtefasiliteterArray($områder, $fasiliteter);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +73,7 @@
 	<!-- Javascript: Filter -->
 	<script src="js/searchfilter.js"></script>
 	<script type="text/javascript">
-		$phpTomteomrader = <?php echo json_encode($omrader->tomteomrader, JSON_PRETTY_PRINT) ?>;
+		$phpTomteomrader = <?php echo json_encode($tomteområder, JSON_PRETTY_PRINT) ?>;
 	</script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+Options +FollowSymLinks -MultiViews
+
+#Add UTF-8 support
+AddCharset UTF-8 .html .php
+
+#Turn on the RewriteEngine
+RewriteEngine On
+
+#Rules
+#Redirecter alle requests av typen /tomteområde/ til tomteområde.php med det påfølgende som variabel.
+RewriteRule ^tomteområde/(.*)$ tomteområde.php?name=$1 [NC,L]
+
+#Om filnavnet eller directory ikke eksisterer blir man sendt til index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [R,NC,L]
