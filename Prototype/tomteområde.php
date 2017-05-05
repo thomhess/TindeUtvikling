@@ -81,7 +81,7 @@ function checkExist($dbtomteområde) {
         $counter = 1;
         foreach ($tomteområdeImg as $img) {
             echo ".item:nth-child($counter) {";
-            echo 'background-image: url("' .  $tomteområde["area_images"] . "/". $img . '");';
+            echo 'background-image: url("../' .  $tomteområde["area_images"] . "/". $img . '");';
             echo "background-position: center;";
             echo "background-size: cover;}";
             $counter = $counter + 1;
