@@ -41,7 +41,6 @@ function checkExist($dbtomteområde) {
     <!--jquery and bootstrap js file-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
     <script>
     <?php
         $feltnr = $tomteområde["felt_nr"];
@@ -66,6 +65,30 @@ function checkExist($dbtomteområde) {
     <script src="../js/maps.js"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK90Dd0f4oVwQRhyxmIXiHQhP_5SUQNY0&callback=initialize"></script>
+    <style>
+        header {
+          height: 60vh;
+        }
+
+        html, 
+        body, 
+        .carousel, 
+        .carousel-inner, 
+        .carousel-inner .item {
+            height: 100%;
+        }  
+    <?php 
+        $counter = 1;
+        foreach ($tomteområdeImg as $img) {
+            echo ".item:nth-child($counter) {";
+            echo 'background-image: url("' .  $tomteområde["area_images"] . "/". $img . '");';
+            echo "background-position: center;";
+            echo "background-size: cover;}";
+            $counter = $counter + 1;
+        }
+    ?>
+    
+    </style>
     
 </head>
 <body>

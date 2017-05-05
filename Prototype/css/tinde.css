@@ -295,7 +295,7 @@ body {
 
 
 /*-------  Carousel----------  */
-header {
+/*header {
   height: 60vh;
 }
 
@@ -335,7 +335,7 @@ body,
     background-image: url("../img/4085-77821423ee680532b11e3897bcecad91-0a76cdb094b91f513af5f4bd3d3ddb4aimg_1985.jpg");
     background-position: center;
     background-size: cover;
-}
+} *
 
 /*-------------------- */
 .kart-tomter {
