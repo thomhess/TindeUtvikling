@@ -1,5 +1,7 @@
 <?php
 require('classes/dbfetch.php');
+require_once('classes/geopts.php');
+require_once('classes/dblogin.php');
 
 $dbtomteområde = new fetchTomteområder();
 $tomteområde = checkExist($dbtomteområde);
@@ -30,13 +32,41 @@ function checkExist($dbtomteområde) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tinde Utvikling</title>
+    
     <!--bootstrap link -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--own css -->
     <link rel="stylesheet" type="text/css" href="../css/tinde.css">
+    <link rel="stylesheet" type="text/css" href="../css/maps.css">
     <!--jquery and bootstrap js file-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script>
+    <?php
+        $feltnr = $tomteområde["felt_nr"];
+        
+        
+        $tomtnummere = $geopts->tomter($feltnr);
+    
+        $geopointsList = array_map(function($tomtenr) {
+            global $feltnr;
+            global $geopts;
+            return $geopts->fetchgeopts($feltnr, $tomtenr);
+        }, $tomtnummere);
+
+        echo 'var geopointsList = ' . json_encode($geopointsList) . ';';
+        
+        foreach ($geopts->fetcharea($feltnr) as $row ){
+            echo 'var maplat = ' . $row['lat'] . ';';
+            echo 'var maplng = ' . $row['lng'] . ';';
+        }
+    ?>
+    </script>
+    <script src="../js/maps.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK90Dd0f4oVwQRhyxmIXiHQhP_5SUQNY0&callback=initialize"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -109,7 +139,7 @@ function checkExist($dbtomteområde) {
         <!--kart og tomte info-->
         <div class="row kart-row">              
             <div class="col-md-9 col-xs-12 kart-tomter">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1960.638543310963!2d11.147811315960286!3d60.56666931824183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641edefd37ac029%3A0x1d00e5a24e7b3580!2sSkreikampen!5e0!3m2!1sno!2sno!4v1488807573638" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></iframe>
+                <div id="map-canvas"></div>
             </div>
             <div class="col-md-3 col-xs-12 dialog-boks">
                 <h3>Tomt:</h3>

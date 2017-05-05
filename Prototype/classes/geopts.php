@@ -24,7 +24,7 @@ class geopts {
         global $dblogin;
         // fetch all the tomter
         $query = "
-        SELECT geo.lat, geo.lng, tomt.status_solgt as solgt, tomt.tomtenr AS tomtenr
+        SELECT geo.lat, geo.lng, tomt.status_solgt AS solgt, tomt.tomtenr AS tomtenr
         FROM Tomter_Geopts AS geo 
         JOIN Tomter AS tomt ON geo.feltnr = tomt.feltnr AND geo.tomtenr = tomt.tomtenr
 
