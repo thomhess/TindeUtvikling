@@ -478,6 +478,15 @@ body,
 	cursor: pointer; 
 }
 
+
+.solgt { 
+    background: #98D1EE;
+}
+
+.ledig {
+    background: #CDF0FC;
+}
+
 /*---------- Hvem er vi ----------*/
 
 .omoss-cont {
