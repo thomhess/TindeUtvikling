@@ -93,28 +93,9 @@ function checkExist($dbtomteområde) {
 </head>
 <body>
     <div class="container">
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-       
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="meny-knapp navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Meny <i class="fa fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
-                    <li><a href="../index.php" >Hjem</a></li>
-                    <li><a href="../område.php" >Områder</a></li>
-                    <li><a href="../omoss.html" >Hvem er vi</a></li>
-                    <li><a href="../kontakt.html" class="nav-contact">Kontakt</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-    </nav>
-
+    <!-- Navigation from navigation.php-->
+    <?php include("navigation.php"); ?>
+    <!--header-->
     <div class="container-fluid">
         <!--header-->
         <header>
@@ -187,7 +168,7 @@ function checkExist($dbtomteområde) {
         <!--tabell over tomtene-->
         <div class="row">
             <div class="col-md-7 col-md-offset-2 liste">            
-                <table class="table">
+                <table class="table" id="printTable">
                     <thead>
                       <tr>
                         <th>Tomt</th>
@@ -218,12 +199,12 @@ function checkExist($dbtomteområde) {
                     </tbody>
                 </table>
                 <div class="print">
-                    <span class="glyphicon glyphicon-print"></span>
+                    <span class="glyphicon glyphicon-print" id="printknapp"></span>
                 </div>
             </div>
         </div>
-        <!-- Reguleringsplaner og selgere-->
-        <div class="row reg-selgere-row">
+        </div>
+       <div class="row reg-selgere-row">
             <div class="col-xs-11 col-xs-offset-1 col-md-4 col-md-offset-3 planer">
                 <h2>Områdeplaner</h2>
                 <h4><span class="glyphicon glyphicon-floppy-save"></span>Reguleringskart</h4>
@@ -235,12 +216,23 @@ function checkExist($dbtomteområde) {
                 <h4><span class="glyphicon glyphicon-user"></span>Siri Siridottir</h4>
             </div>
         </div>
-    <!--footer-->
-        <footer class="col-xs-12">
-            <div class="col-md-3 col-md-offset-2"><h2>Kontakt oss</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla non sint in hic tenetur ea ipsam quis vero quia reprehenderit, commodi expedita quibusdam, iste molestias ut libero necessitatibus obcaecati.</p></div>
-            <div class="col-md-3 col-md-offset-2 col-xs-12"><img class="img-responsive" src="http://placehold.it/400x300" alt=""></div>
-        </footer> 
+        <footer class="col-xs-12 text-center">
+            <h3>KONTAKT OSS</h3>
+            <div><span class="glyphicon glyphicon-phone-alt"></span><p>45 24 81 89</p></div>
+            <div><span class="glyphicon glyphicon-envelope"></span><p>Post@tinde.no</p></div>
+            <div><span class="glyphicon glyphicon-map-marker"></span><p>Frøya 2630 Ringbu</p></div>
+            <br>
+            <div><a href="#">www.tindehytter.no</a></div>
+            <div class="bottom-footer-div">
+                <h4>Våres sosiale medier</h4>
+                <a href="#"><img src="../img/facebook-icon.png " height="25" width="25" ></a>   
+                <a href="#"><img src="../img/twitter-icon.png" height="25" width="25" ></a>
+                <a href="#"><img src="../img/insta-icon.png " height="25" width="25" ></a>
+            </div>
+        </footer>
     </div>
+    <script src="../js/print.js"></script>
+    <script src="../js/table.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/visTomteListeMobil.js"></script>
 </body>
