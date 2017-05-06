@@ -1,5 +1,9 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {font-family:"Caviar Dreams Bold";src:url("../font/CaviarDreams_Bold.eot") format("eot"),url("../font/CaviarDreams_Bold.woff") format("woff"),url("../font/CaviarDreams_Bold.ttf") format("truetype"),url("../font/CaviarDreams_Bold.svg#CaviarDreams-Bold") format("svg");font-weight:normal;font-style:normal;}
+
+
 body {
-	font-family: "Sanseriffic", regular;
+	font-family:"Caviar Dreams Bold";
 }
 
 .container {
@@ -399,6 +403,7 @@ body,
 
 .btn-kontakt:hover {
 	background-color: #c66154;
+	color: white;
 }
 
 .tomt {
@@ -477,7 +482,6 @@ body,
 #printknapp{ 
 	cursor: pointer; 
 }
-
 
 .solgt { 
     background: #98D1EE;

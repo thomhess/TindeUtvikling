@@ -93,8 +93,33 @@ function checkExist($dbtomteområde) {
 </head>
 <body>
     <div class="container">
-    <!-- Navigation from navigation.php-->
-    <?php include("navigation.php"); ?>
+    <!-- Navigation -->
+       
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.php">HJEM</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../område.php">OMRÅDER</a></li>
+            <li><a href="../omoss.php">HVEM ER VI</a></li>
+          </ul>   
+          <ul class="nav navbar-nav navbar-right">
+            <li id="kontakt-knapp" class="active"><a href="../kontakt.php">KONTAKT OSS<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     <!--header-->
     <div class="container-fluid">
         <!--header-->
@@ -213,7 +238,7 @@ function checkExist($dbtomteområde) {
         </div>
         </div>
        <div class="row reg-selgere-row">
-            <div class="col-xs-11 col-xs-offset-1 col-md-4 col-md-offset-3 planer">
+            <div class="col-xs-11 col-xs-offset-1 col-md-4 col-md-offset-2 planer">
                 <h2>Områdeplaner</h2>
                 <h4><span class="glyphicon glyphicon-floppy-save"></span>Reguleringskart</h4>
                 <h4><span class="glyphicon glyphicon-floppy-save"></span>Reguleringsplan</h4>
