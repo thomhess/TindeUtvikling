@@ -132,9 +132,17 @@ function checkExist($dbtomteområde) {
         </div>
         <div class="row">       
             <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 tomt-info">              
-                <h4>Feltnr: <?php echo $tomteområde["felt_nr"]?></h3>
-                <h4>Område: <?php echo $tomteområde["area_name"]?></h3>
-                <h4>Pris: Fra 109 000 til 7 000 000</h3>
+                <h4>Feltnr: <?php echo $tomteområde["felt_nr"]?></h4>
+                <h4>Område: <?php echo $tomteområde["area_name"]?></h4>
+                <!--<h4>Pris: Fra 109 000 til 7 000 000</h4>-->
+                <h4>Pris: 
+                <?php
+                    echo "Fra ";
+                    echo min(array_column($tomter, 'pris'));
+                    echo " til ";
+                    echo max(array_column($tomter, 'pris'));
+                 ?>
+                 </h4>
                 <p><?php echo $tomteområde["ingress"]?></p>
                 <p><?php echo $tomteområde["tekst"]?></p>
                 <a href="../kontakt.html" class="btn btn-default btn-lg btn-kontakt">Send forespørsel om området</a>
