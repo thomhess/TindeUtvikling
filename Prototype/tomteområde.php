@@ -201,7 +201,7 @@ function checkExist($dbtomteområde) {
         <!--tabell over tomtene-->
         <div class="row">
             <div class="col-md-7 col-md-offset-2 liste">            
-                <table class="table" id="printTable">
+                <table style="width: 100%; text-align: left;" class="table" id="printTable">
                     <thead>
                       <tr>
                         <th>Tomt</th>
