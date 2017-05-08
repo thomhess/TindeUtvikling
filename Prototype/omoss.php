@@ -28,10 +28,10 @@
 	<!--Hvem er vi content-->
 	<div class="col-xs-12 innholdDiv">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-xs-9 col-xs-offset-2 ">
+			<div class="col-md-6 col-md-offset-3 col-xs-9 col-xs-offset-2 header-space">
 				<h1>Hvem er vi</h1>
 				<br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, totam, quod! Nihil rem, tempora deleniti. Laborum neque consequatur, obcaecati aperiam quo id molestiae sunt, explicabo officiis unde quasi sed illum.</p>
+				<h4 class="read-length">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, totam, quod! Nihil rem, tempora deleniti. Laborum neque consequatur, obcaecati aperiam quo id molestiae sunt, explicabo officiis unde quasi sed illum.</h4>
 			</div>
 		</div>
 		<div class="row">

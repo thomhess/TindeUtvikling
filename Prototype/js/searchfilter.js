@@ -47,9 +47,10 @@ $(document).ready(function () {
 
 	//Click funksjon for index.php filtrering knapper.
 	$('.btn-filter').click(function(e) {
-		$('.btn-filter').removeClass('active');
-		$('.btn-filter').addClass('inactive');
-		$(e.target).parent('li').addClass('active');
+		$('.btn-filter').removeClass('btn-active');
+		$('.btn-filter').addClass('btn-inactive');
+		$(e.target).removeClass('btn-inactive');
+		$(e.target).addClass('btn-active');
 		$fasilitetFilter = [];
 		$fasilitetFilter.push($(e.target).attr('Value'));
 		arrayFilter();
@@ -127,9 +128,15 @@ $(document).ready(function () {
 			                $tomteomrader[i].navn //Navn på området
 			            )
 			        ).append(
-			        $("<p>").text(
+			        $("<h4>").text(
 			        	$tomteomrader[i].oneliner //Tekst/Oneliner om området.
-			        ) 
+			        )).append(
+			        $("<h4>").append(
+			        	"<b>Pris:</b> Fra " + $tomteomrader[i].min_pris + " til " + $tomteomrader[i].max_pris + " kroner."
+			        )).append(
+			        $("<h4>").append(
+			        	"<b>Sted:</b> " + $tomteomrader[i].area_name
+			        	)  
 			    )).appendTo("#search-result")
 			};
 		} else if ($tomteomrader.length == 0){
@@ -146,20 +153,21 @@ $(document).ready(function () {
 			$("<div>", {class: "col-md-3"}).append(
 				$("<a>", {href: "tomteområde/" + replaceSpaceName($tomteomrader[i]["navn"]) }).append( //Link til underside. Kan bygges dynamisk, se under.
 				$("<img>", {
-					src: $tomteomrader[i]["thumbnail"],  // Hvordan velger vi hvilket bilde som skal vises (fra array). Spesifike filnavn. $tomteomrader[i]["Bilde"]
-					alt: "Bilde av " + $tomteomrader[i]["navn"] + "."
-					}))).appendTo("#area-cont")
+					src: $tomteomrader[i]["thumbnail"],  //Thumbnail bilde
+					alt: "Bilde av " + $tomteomrader[i]["navn"] + "." //Alt tekst til thumbnail bildet
+					})).append(
+			$("<h1>", {class: "area-name"}).text(
+				$tomteomrader[i].navn //Navn på tomteområdet
+				))).appendTo("#area-cont")
 			}
 			i++;
 		}
 	}
-/*
+
 	// Sender bruker videre til tomteområde undersiden, uansett hvor man trykker hen i area-result containeren.
 	$('.area-result').click(function(e) {
-		window.location.href = "område/skreikampen.html"; 
-		//Litt usikker på hvordan vi går fram for å gjøre denne. De må nok ha linken allerede tilknyttet seg på en måte når de blir sendt til DOM. 
-		//Kanskje fetches fra a? ELLER kun hente ut navnet på området fra DOM og sette det sammen med resten av filepathen ("område/"), siden alle undersidene ligger på samme sted uansett.
+		$fetchLink = $(this).find("a").attr("href");
+		window.location.href = $fetchLink; 
 	})
-	*/
 });
 

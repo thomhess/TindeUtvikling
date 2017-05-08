@@ -6,7 +6,6 @@ AddCharset UTF-8 .html .php
 #Turn on the RewriteEngine
 RewriteEngine On
 
-#Rules
 #Redirecter alle requests av typen /tomteområde/ til tomteområde.php med det påfølgende som variabel.
 RewriteRule ^tomteområde/(.*)$ tomteområde.php?name=$1 [NC,L]
 

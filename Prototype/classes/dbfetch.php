@@ -11,6 +11,16 @@ class fetchTomter {
 			return $tomter;
 		}
 	}
+
+	public function fetchAll() {
+		global $dblogin;
+		$query = "SELECT * FROM tomter";
+		$stmnt = $dblogin->db->prepare($query);
+		if ($stmnt->execute()) {
+			$tomter = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+			return $tomter;
+		}
+	}
 }
 
 
@@ -59,6 +69,27 @@ class fetchTomteområder {
 				if ($tomteområder[$i]["felt_nr"] == $tomtefasiliteter[$e]["feltnr"]) {
 					$tomteområder[$i][$tomtefasiliteter[$e]["fasilitet_navn"]] = $tomtefasiliteter[$e]["fasilitet_navn"];
 				}
+			}
+		}
+		return $tomteområder;
+	}
+
+	public function mergeTomtepriser($tomteområder, $tomter) {
+		$tomteområdeCount = count($tomteområder);
+		$tomteCount = count($tomter);
+		for ($i = 0; $i < $tomteområdeCount; $i++) {
+			for ($e = 0; $e < $tomteCount; $e++) {
+				if ($tomteområder[$i]["felt_nr"] == $tomter[$e]["feltnr"]) {
+					$tomterResult[]["pris"] = $tomter[$e]["pris"];
+				}
+			}
+
+			if (!empty($tomterResult)) {
+				$max = max(array_column($tomterResult, 'pris'));
+				$min = min(array_column($tomterResult, 'pris'));
+				$tomteområder[$i]["min_pris"] = $min;
+				$tomteområder[$i]["max_pris"] = $max;
+				$tomterResult = array();
 			}
 		}
 		return $tomteområder;

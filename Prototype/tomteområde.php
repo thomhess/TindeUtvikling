@@ -15,6 +15,7 @@ $tomter = $dbtomter->fetchPerFeltnr($tomteområde["felt_nr"]);
 $tomteområdeImg = array_diff(scandir($tomteområde["area_images"]), array('..', '.'));
 
 
+
 function checkExist($dbtomteområde) {
     if(isset($_GET["name"])) {
         if ($fetchTomteområde = $dbtomteområde->fetchSingle($_GET["name"])) {
@@ -25,6 +26,7 @@ function checkExist($dbtomteområde) {
         }
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,33 +95,8 @@ function checkExist($dbtomteområde) {
 </head>
 <body>
     <div class="container">
-    <!-- Navigation -->
-       
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.php">HJEM</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="../område.php">OMRÅDER</a></li>
-            <li><a href="../omoss.php">HVEM ER VI</a></li>
-          </ul>   
-          <ul class="nav navbar-nav navbar-right">
-            <li id="kontakt-knapp" class="active"><a href="../kontakt.php">KONTAKT OSS<span class="sr-only">(current)</span></a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+    <!-- Navigation from navigation.php-->
+    <?php include("navigation.php"); ?>
     <!--header-->
     <div class="container-fluid">
         <!--header-->
@@ -161,16 +138,18 @@ function checkExist($dbtomteområde) {
                 <h4>Område: <?php echo $tomteområde["area_name"]?></h4>
                 <!--<h4>Pris: Fra 109 000 til 7 000 000</h4>-->
                 <h4>Pris: 
-                <?php
-                    echo "Fra ";
-                    echo min(array_column($tomter, 'pris'));
-                    echo " til ";
-                    echo max(array_column($tomter, 'pris'));
+                <?php 
+                    if (!empty($tomter)) {
+                        echo "Fra ";
+                        echo min(array_column($tomter, 'pris'));
+                        echo " til ";
+                        echo max(array_column($tomter, 'pris'));
+                    }
                  ?>
                  </h4>
                 <p><?php echo $tomteområde["ingress"]?></p>
                 <p><?php echo $tomteområde["tekst"]?></p>
-                <a href="../kontakt.html" class="btn btn-default btn-lg btn-kontakt">Send forespørsel om området</a>
+                <a href="../kontakt.php" class="btn btn-default btn-lg btn-kontakt">Send forespørsel om området</a>
             </div>
         </div>
         <!--kart og tomte info-->
@@ -182,7 +161,7 @@ function checkExist($dbtomteområde) {
                <div id="tomtebox">
                 <h3>Klikk på en tomt i kartet for å få mer informasjon om tomten</h3>
                 </div>
-                <a href="../kontakt.html" class="btn btn-default btn-lg btn-kontakt">Send forespørsel på Tomt</a>
+                <a href="../kontakt.php" class="btn btn-default btn-lg btn-kontakt">Send forespørsel på Tomt</a>
 
                 <div class="center-block">
                     <a href="#"><img src="../img/facebooklogo.png " height="25" width="25"></a> 
@@ -238,7 +217,7 @@ function checkExist($dbtomteområde) {
         </div>
         </div>
        <div class="row reg-selgere-row">
-            <div class="col-xs-11 col-xs-offset-1 col-md-4 col-md-offset-2 planer">
+            <div class="col-xs-11 col-xs-offset-1 col-md-4 col-md-offset-3 planer">
                 <h2>Områdeplaner</h2>
                 <h4><span class="glyphicon glyphicon-floppy-save"></span>Reguleringskart</h4>
                 <h4><span class="glyphicon glyphicon-floppy-save"></span>Reguleringsplan</h4>

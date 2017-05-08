@@ -43,13 +43,11 @@
 	<div class="row">
 		<div class="col-xs-12 areas">
 			<div class="area-filter">
-				<ul class="nav nav-pills" role="tablist">
-					<li role="presentation" class="active btn-filter"><a value="Langrenn">Langrenn<span class="badge"></span></a></li>
-					<li role="presentation" class="inactive btn-filter"><a value="Fiske">Fiske<span class="badge"></span></a></li>
-					<li role="presentation" class="inactive btn-filter"><a value="Alpint">Alpint<span class="badge"></span></a></li>
-					<li role="presentation" class="inactive btn-filter"><a value="Jakt">Jakt<span class="badge"></span></a></li>
-					<li role="presentation" class="inactive btn-filter"><a value="Tur">Tur<span class="badge"></span></a></li>
-				</ul>
+				<img value="Langrenn" class="btn-filter btn-active" src="img/icons/langrenn.png">
+				<img value="Fiske" class="btn-filter btn-inactive" src="img/icons/fiske.png">
+				<img value="Alpint" class="btn-filter btn-inactive" src="img/icons/alpint.png">
+				<img value="Jakt" class="btn-filter btn-inactive" src="img/icons/jakt.png">
+				<img value="Tur" class="btn-filter btn-inactive" src="img/icons/tur.png">
 			</div>
 			<!-- area images -->
 			<div class="col-lg-10 col-lg-offset-1" id="area-cont">

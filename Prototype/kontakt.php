@@ -27,9 +27,9 @@
 	<!--Kontakt tekst -->
 	<div class="col-xs-12 innholdDiv">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-6 col-md-offset-3 header-space">
 				<h1>Kontakt</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni.  </p>
+				<h4 class="read-length">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus, sapiente! Sed hic aliquam excepturi dolores fuga enim quidem et corrupti, adipisci molestias necessitatibus commodi, ipsa deserunt soluta doloremque magni.  </h4>
 			</div>
 		</div>
 		<!--skjema -->

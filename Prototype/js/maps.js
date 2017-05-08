@@ -42,7 +42,7 @@ function initialize() {
           console.log(this.metadata.tekst);
           
           tomtebox = $("#tomtebox");
-          tomtebox.html("<h3>Tomt: " + this.metadata.id + " </h3><p>Pris: " + this.metadata.pris + " </p><p>Gårdsnr.: " + this.metadata.gnr + " </p><p>Areal: " + this.metadata.areal + "m2</p><p>Merknad: " + this.metadata.tekst + "</p>");
+          tomtebox.html("<h3>Tomt: " + this.metadata.id + " </h3><p><b>Pris:</b> " + this.metadata.pris + " </p><p><b>Gårdsnr.:</b> " + this.metadata.gnr + " </p><p><b>Areal:</b> " + this.metadata.areal + "m2</p><p><b>Merknad:</b> " + this.metadata.tekst + "</p>");
           
           
       });

@@ -1,10 +1,16 @@
 <?php 
 	include("classes/dbfetch.php");
+
 	$fetchTomteområder = new fetchTomteområder();
 	$områder = $fetchTomteområder->fetchAll();
 	$fasiliteter = $fetchTomteområder->fetchAllTomtefasiliteter();
 
-	$tomteområder = $fetchTomteområder->mergeTomtefasiliteterArray($områder, $fasiliteter);
+	$fetchTomter = new fetchTomter();
+	$tomter = $fetchTomter->fetchAll();
+
+
+	$tomteområder = $fetchTomteområder->mergeTomtepriser($områder, $tomter);
+	$tomteområder = $fetchTomteområder->mergeTomtefasiliteterArray($tomteområder, $fasiliteter);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +28,6 @@
 </head>
 <body>
 	<div class="container">
-	<!-- Navigation -->
     <!-- Navigation from navigation.php-->
 	<?php include("navigation.php"); ?>
     <!--header-->
@@ -34,9 +39,9 @@
 	<div class="row headerrow">	
 	</div>
 	<!--Filtrering-->
-	<div class="col-xs-12 innholdDiv ">
+	<div class="col-xs-12 innholdDiv">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 header-space">
 				<h1>Tomteområder</h1>
 			</div>
 		</div>
