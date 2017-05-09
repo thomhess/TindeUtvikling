@@ -103,20 +103,37 @@ function checkExist($dbtomteområde) {
         <header>
             <div id="carousel" class="carousel slide carousel-fade" data-interval="0" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li><?php 
+                        $counter = 1;
+                        for ($i = 0; count($tomteområdeImg) - 1 > $i; $i++) {
+                            echo '<li data-target="#carousel" data-slide-to="' . $counter . '"></li>';
+                            $counter = $counter + 1;
+                        }
+                        ?>
+                    
+                    
+                    <!--li data-target="#carousel" data-slide-to="2"></li>
                     <li data-target="#carousel" data-slide-to="3"></li>
-                    <li data-target="#carousel" data-slide-to="4"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li-->
                 </ol>
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="active item">
                     </div>
+                    <?php
+                    $count2 = 1;
+                    foreach ($tomteområdeImg as $img) {
+                        echo '<div class="item"></div>';
+                        $count2 = $count2 + 1;
+                        if ($counter <= $count2) {
+                            break;
+                        }
+                    }
+                    ?>
+                    
+                    <!--div class="item"></div>
                     <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+                    <div class="item"></div-->
                 </div>
                 <!-- Carousel nav -->
                 <a class="carousel-control left" href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
