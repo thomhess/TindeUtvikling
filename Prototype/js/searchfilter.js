@@ -128,13 +128,13 @@ $(document).ready(function () {
 			                $tomteomrader[i].navn //Navn på området
 			            )
 			        ).append(
-			        $("<h4>").text(
+			        $("<p>").text(
 			        	$tomteomrader[i].oneliner //Tekst/Oneliner om området.
 			        )).append(
-			        $("<h4>").append(
+			        $("<p>").append(
 			        	"<b>Pris:</b> Fra " + $tomteomrader[i].min_pris + " til " + $tomteomrader[i].max_pris + " kroner."
 			        )).append(
-			        $("<h4>").append(
+			        $("<p>").append(
 			        	"<b>Sted:</b> " + $tomteomrader[i].area_name
 			        	)  
 			    )).appendTo("#search-result")
@@ -150,7 +150,7 @@ $(document).ready(function () {
 		var i = 0;
 		while (i < 8) {
 			if (i < $tomteomrader.length) {
-			$("<div>", {class: "col-md-3"}).append(
+			$("<div>", {class: "col-md-3 area-align"}).append(
 				$("<a>", {href: "tomteområde/" + replaceSpaceName($tomteomrader[i]["navn"]) }).append( //Link til underside. Kan bygges dynamisk, se under.
 				$("<img>", {
 					src: $tomteomrader[i]["thumbnail"],  //Thumbnail bilde
