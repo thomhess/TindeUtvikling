@@ -149,9 +149,6 @@ body, .navbar li a, .navbar-brand {
 }
 
 .areas {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
 	padding-bottom: 50px;
 	background: #eee;
 }
@@ -180,17 +177,6 @@ body, .navbar li a, .navbar-brand {
 	cursor: pointer;
 }
 
-#area-cont {
-	display: flex;
-	flex-flow: row wrap;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding-top: 15px;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;	
-}
-
 .btn-active {
 	background-image: url('../img/icons/btn_active.png');
 	background-size: 100px 100px;
@@ -212,8 +198,8 @@ body, .navbar li a, .navbar-brand {
 }
 
 #area-cont img {
+	max-height: 100%;
 	max-width: 100%;
-	margin-bottom: 25px;
 	padding: 2px;
 }
 
@@ -221,7 +207,6 @@ body, .navbar li a, .navbar-brand {
 	padding: 0px;
 	border: 2px solid #0095CF;
 }
-
 
 .area-name {
 	text-align: center;
@@ -326,8 +311,7 @@ body, .navbar li a, .navbar-brand {
 
 .area-result > .col-lg-4 {
 	position: relative;
-	height: 200px;
-	overflow: hidden;
+	height: 250px;
 }
 
 .img-result {

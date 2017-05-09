@@ -5,7 +5,7 @@ class dblogin {
 	public $db_host = 'localhost';
 	public $db_database = 'TindeUtvikling';
 	public $db_user = 'root';
-	public $db_pass = '';
+	public $db_pass = 'root';
     public $db;
     
 	public function __construct() {

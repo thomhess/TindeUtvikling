@@ -57,13 +57,9 @@ CREATE TABLE `Fasiliteter` (
 
 INSERT INTO `Fasiliteter` (`navn`, `type`) VALUES
 ('Avløp', 'Teknisk'),
-('Strøm', 'Teknisk'),
-('Vei', 'Teknisk'),
 ('Langrenn', 'Aktiviteter'),
-('Fiske', 'Aktiviteter'),
-('Alpint', 'Aktiviteter'),
-('Tur', 'Aktiviteter'),
-('Jakt', 'Aktiviteter');
+('Strøm', 'Teknisk'),
+('Vei', 'Teknisk');
 
 -- --------------------------------------------------------
 
@@ -112,58 +108,16 @@ CREATE TABLE `Tomtefasiliteter` (
 
 INSERT INTO `Tomtefasiliteter` (`feltnr`, `fasilitet_navn`) VALUES
 (1, 'Strøm'),
-(1, 'Avløp'),
 (1, 'Vei'),
 (1, 'Langrenn'),
-(1, 'Tur'),
-(1, 'Alpint'),
-(2, 'Strøm'),
 (2, 'Avløp'),
 (2, 'Vei'),
 (2, 'Langrenn'),
-(2, 'Tur'),
-(2, 'Alpint'),
+(3, 'Avløp'),
 (3, 'Vei'),
 (3, 'Langrenn'),
-(3, 'Jakt'),
-(3, 'Tur'),
-(3, 'Fiske'),
-(4, 'Vei'),
-(4, 'Strøm'),
-(4, 'Avløp'),
-(4, 'Fiske'),
-(4, 'Tur'),
-(4, 'Langrenn'),
-(5, 'Strøm'),
-(5, 'Jakt'),
-(5, 'Tur'),
-(5, 'Langrenn'),
-(6, 'Avløp'),
-(6, 'Vei'),
-(6, 'Jakt'),
-(6, 'Langrenn'),
-(6, 'Fiske'),
-(7, 'Avløp'),
-(7, 'Vei'),
-(7, 'Tur'),
-(7, 'Langrenn'),
-(7, 'Alpint'),
-(8, 'Avløp'),
-(8, 'Vei'),
-(8, 'Tur'),
-(8, 'Fiske'),
-(9, 'Strøm'),
-(9, 'Vei'),
-(9, 'Tur'),
-(9, 'Jakt'),
-(9, 'Langrenn'),
-(10, 'Strøm'),
-(10, 'Avløp'),
-(10, 'Vei'),
-(10, 'Tur'),
-(10, 'Jakt'),
-(10, 'Langrenn'),
-(10, 'Fiske');
+(3, 'Strøm'),
+(4, 'Vei');
 
 -- --------------------------------------------------------
 
@@ -192,7 +146,7 @@ CREATE TABLE `Tomteområde` (
 
 INSERT INTO `Tomteområde` (`felt_nr`, `navn`, `lat`, `lng`, `ingress`, `oneliner`, `tekst`, `reg_plan`, `reg_map`, `area_name`, `thumbnail`, `area_images`) VALUES
 (1, 'Skreikampen', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regmap1.pdf', '', 'Valdres', "img/tomteområder/skreikampen/4023-c4fd5d532cb57e7f1a84987c0b34352e-2b9a2424d58d18de7bb26e547aa2bbb8nordseter5.jpg", "img/tomteområder/skreikampen"),
-(2, 'Gålåtoppen', '61.519523', '9.778843', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regplan1.pdf', 'docs/regmap/omr/regmap1.pdf', 'Gudbrandsdalen Nord', "img/4046-f8184968280632c1e0dcddfb36da6de0-7977f928de23ce5601691f2c748a301324.jpg", "img/tomteområder/gålåtoppen"),
+(2, 'Gålåtoppen', '61.519523', '9.778843', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regplan1.pdf', 'docs/regmap/omr/regmap1.pdf', 'Gudbrandsdalen Nord', "img/4046-f8184968280632c1e0dcddfb36da6de0-7977f928de23ce5601691f2c748a301324.jpg", "img/tomteområder/gålåtoppen"),
 (3, 'Femundsmarka', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regplan1.pdf', 'docs/regmap/omr/regmap1.pdf', 'Hedmark', "img/4039-c544bd176878d642a7883180c6c69d9e-2c4541be28649e23415f7f67b5bc7e5fnordseter1.jpg", "img/tomteområder/femundsmarka"),
 (4, 'Liabygda', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regplan1.pdf', 'docs/regmap/omr/regmap1.pdf', 'Sør-Trøndelag', "img/4023-c4fd5d532cb57e7f1a84987c0b34352e-2b9a2424d58d18de7bb26e547aa2bbb8nordseter5.jpg", "img/tomteområder/liabygda"),
 (5, 'Hjerkinnlia', '60.567125', '11.149905', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus ipsam cum dignissimos unde quisquam porro dolores corporis reprehenderit tempora modi, minima deleniti totam cumque reiciendis est possimus. Ut, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam possimus fugit eius dolores mollitia ducimus perferendis dolorum voluptatem, delectus soluta similique sequi minus dolor suscipit exercitationem esse nisi optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium repellat autem nostrum voluptas nam eaque! Architecto, iure velit, eligendi facilis harum ducimus tempora esse numquam, aliquam error voluptas laudantium.', 'docs/regmap/omr/regplan1.pdf', 'docs/regmap/omr/regmap1.pdf', 'Hedmark', "img/4037-9d674db4a1df6b0df94c81469c23696d-a3c0a85afc1f59979df1b5511e1b134b13.jpg", "img/tomteområder/hjerkinnlia"),
@@ -229,31 +183,7 @@ INSERT INTO `Tomter` (`feltnr`, `tomtenr`, `gnr_bnr`, `areal`, `pris`, `tekst`, 
 (1, 3, 'Gårdsnr 101, Bruksnummer 5', 200, 200000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
 (1, 4, 'Gårdsnr 101, Bruksnummer 6', 500, 900000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
 (2, 1, 'Gårdsnr 999, Bruksnummer 1', 100, 700000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(2, 2, 'Gårdsnr 999, Bruksnummer 2', 300, 600000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(3, 1, 'Gårdsnr 101, Bruksnummer 4', 600, 1000000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(3, 2, 'Gårdsnr 101, Bruksnummer 5', 200, 500000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(4, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 600000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(4, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 300000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(5, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 450000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(5, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 900000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(6, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 350000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(6, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 600000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(7, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 200000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(7, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 800000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(8, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 500000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(8, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 850000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(9, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 1000000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(9, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 650000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-
-(10, 1, 'Gårdsnr 101, Bruksnummer 6', 500, 400000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf'),
-(10, 2, 'Gårdsnr 999, Bruksnummer 1', 100, 950000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 1, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf');
+(2, 2, 'Gårdsnr 999, Bruksnummer 2', 300, 600000, 'Lorefvasvas asdv as asdv as vas vas va sdv asv avsdsva dsvasd v', 0, 'sdsd/sdcsd/sbasdf.pdf', 'sdsd/sdcsd/sbasdf.pdf');
 
 -- --------------------------------------------------------
 
